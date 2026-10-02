@@ -1,0 +1,78 @@
+# Ilocano Hymn Lexicon Benchmark Configuration
+# All paths are relative to the project root (ilocano-hymn-benchmark/)
+
+paths:
+  raw_corpus: data/raw/corpus_ilocano_liturgy.txt
+  unique_words: data/raw/unique_words.txt
+  lexicon_house_dir: data/lexicon_house/
+  lexicon_external_dir: data/lexicon_external/
+  user_supplied_dir: data/lexicon_external/user_supplied/
+  genres_dir: data/genres/
+  results_dir: results/
+  logs_dir: logs/
+
+seeds:
+  random_seed: 42
+  numpy_seed: 42
+
+cv:
+  n_folds: 10
+  n_repeats: 5
+  fast_n_folds: 3
+  fast_n_repeats: 2
+
+bootstrap:
+  n_iterations: 1000
+  fast_n_iterations: 100
+  confidence_level: 0.95
+
+fuzzy_matching:
+  dedupe_threshold: 85
+  variant_threshold: 80
+
+retrieval:
+  top_k: [1, 3, 5]
+
+lexicon_masking:
+  mask_fractions: [0.25, 0.5, 0.75, 1.0]
+  mask_seeds: [42, 123, 456, 789, 101]
+
+boundary_detection:
+  method: auto  # auto, regex, manual
+  manual_boundary_file: data/song_boundaries.csv  # optional override
+  regex_pattern: null  # optional regex override
+
+fast_mode: false
+
+# Spanish/Latin loanword seed list for code-switching features
+loanword_seeds:
+  - gloria
+  - aleluya
+  - espiritu
+  - domini
+  - santo
+  - cristo
+  - bendito
+  - amen
+  - hosanna
+  - sacramento
+  - cordero
+  - creda
+  - evangelio
+  - sermon
+  - gracia
+  - apostolica
+  - ceremonia
+  - patri
+  - nunc
+  - dimittis
+  - agnus
+  - dei
+  - pax
+  - introita
+  - kyrie
+  - excelsis
+  - pentecostes
+  - trinidad
+  - prefacio
+  - numero

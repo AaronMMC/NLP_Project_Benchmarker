@@ -216,3 +216,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Project-specific: agentic / internal instruction files ---
+AGENTS.md
+PLAN.md
+
+# --- Project-specific: generated outputs ---
+results/
+logs/
+
+# --- Project-specific: optional user-supplied lexicon drop zone ---
+data/lexicon_external/user_supplied/*
+!data/lexicon_external/user_supplied/.gitkeep
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+desktop.ini
