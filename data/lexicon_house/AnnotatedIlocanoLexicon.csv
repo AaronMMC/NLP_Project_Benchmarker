@@ -1,0 +1,672 @@
+Number,Word,Normalized_Ilocano,Lemma_Root,UPOS_Tag,English_Translation,Context_Example
+1,a,a,a,PART,linker connecting a modifier or clause; often untranslated,...iti napudno a puso... (p. 12)
+2,adal,adal,adal,NOUN,teaching / doctrine / instruction,...dagiti nadalus nga adal ken macapagpaay a sursuro... (p. 19)
+3,adalan,adalan,adal,NOUN,disciples / learners,...cadagiti napili nga adalan... (p. 21)
+4,adalanna,adalanna,adal,NOUN,His disciples,...intedna cadagiti adalanna... (p. 22)
+5,adan,adan,Adan,PROPN,Adam,...iti basol ni Adan... (p. 20)
+6,adda,adda,adda,VERB,is present / exists,...adda iti nagan ti Apo. (p. 12)
+7,addaca,addaka,adda,VERB,You are / You are present,Amami nga addaca sadi langit... (p. 22)
+8,adipen,adipen,adipen,NOUN,servant / minister,...adipen ti Sao... (p. 13)
+9,adipenmo,adipenmo,adipen,NOUN,Your servant,Apo palubusamon a sitatalna daytoy adipenmo. (p. 24)
+10,adu,adu,adu,ADJ,many / numerous,...dagiti adu unay a lablabsingmi... (p. 18)
+11,adviento,adbiento,Adbiento,PROPN,Advent,Adviento: A ti dalanna insagana ni Juan Bautista... (p. 20)
+12,agani,agani,ani,VERB,reap / harvest; those who reap,...cadagiti agani iti paganiam... (p. 18)
+13,agbiagcami,agbiagkami,biag,VERB,we may live (excluding the addressee),...tapno agbiagcami a maipaay Kenca. (p. 19)
+14,agcararag,agkararag,kararag,VERB,prays / shall pray,Agcararag ti Pastor... (p. 15)
+15,agcomulgar,agkomulgar,komulgar,VERB,receive Holy Communion,...dagiti agcomulgar... (p. 24)
+16,aggapu,aggapu,gapu,VERB,proceeds / comes from,...nga aggapu iti Ama ken iti Anac... (p. 16)
+17,agingga,agingga,ingga,ADP,until / up to,...agingga iti biag nga agnanayon! (p. 24)
+18,agirayda,agirayda,iray,VERB,may they be inclined / may they be willing,...ket agirayda makicuyog a cadacami... (p. 18)
+19,aglaplapusanan,aglaplapusanan,lapus,VERB,overflowing / abounding (describing joy),...iti aglaplapusanan a rag-o. (p. 21)
+20,agnanayon,agnanayon,nayon,ADJ,everlasting / eternal,...iti biag nga agnanayon! (p. 24)
+21,agnus,agnus,agnus,NOUN,"lamb (Latin; in Agnus Dei, Lamb of God)",TI AGNUS DEI (p. 23)
+22,agpaay,agpaay,paay,VERB,is intended for / avails for,Ti tulong nga agpaay cadatayo... (p. 12)
+23,agpasikal,agpasikal,pasikal,VERB,be in labor / undergo childbirth pains,...dagiti agrigat nga agpasikal... (p. 18)
+24,agragsac,agragsak,ragsak,VERB,rejoice / be glad,...agragragsac ti sibubukel a daga... (p. 21)
+25,agraman,agraman,raman,ADP,together with / including,"Ket Sica, agraman ti Bugbugtong nga Anacmo... (p. 21)"
+26,agrigat,agrigat,rigat,VERB,suffer hardship / be in distress,...dagiti agrigat nga agpasikal... (p. 18)
+27,agsagaba,agsagaba,sagaba,VERB,suffer / undergo suffering,...rebbengco ti agsagaba iti dusa... (p. 12)
+28,agsagsagaba,agsagsagaba,sagaba,VERB,are suffering / continue to suffer,...nangruna cadagiti agsagsagaba gapu iti naganmo... (p. 18)
+29,agservi,agserbi,serbi,VERB,serve / render service,...agservi Kenca a canayon... (p. 26)
+30,agtugaw,agtugaw,tugaw,VERB,sit / be seated,Agtugaw ti gimong. (p. 15)
+31,agtultuloy,agtultuloy,tuloy,VERB,continuing / persisting (describing perseverance),...iti agtultuloy a panaganusmi iti nasayaat nga aramid. (p. 17)
+32,agyamancami,agyamankami,yaman,VERB,we give thanks (excluding the addressee),...agyamancami Kenca gapu cadagiti amin a kinaimbag... (p. 17)
+33,agyamancayo,agyamankayo,yaman,VERB,"give thanks, all of you",Agyamancayo iti Apo ta Isu naimbag. (p. 25)
+34,agyamantayo,agyamantayo,yaman,VERB,let us give thanks (including the addressee),Agyamantayo iti Apo a Diostayo. (p. 20)
+35,alaenyo,alaenyo,ala,VERB,"take, all of you","Alaenyo, canenyo... (p. 24)"
+36,aldaw,aldaw,aldaw,NOUN,day,...iti maicatlo nga aldaw... (p. 16)
+37,aleluya,aleluya,aleluya,INTJ,hallelujah / praise the Lord,Aleluya! Aleluya! Aleluya! (p. 15)
+38,ama,ama,ama,NOUN,Father,Iti nagan ti Ama ken Anac ken ti Espiritu Santo. (p. 12)
+39,amami,amami,ama,NOUN,our Father (excluding the addressee),Amami nga addaca sadi langit... (p. 22)
+40,amatayo,amatayo,ama,NOUN,our Father (including the addressee),...ken Apo Dios nga Amatayo... (p. 12)
+41,amen,amen,amen,INTJ,amen / so be it,Gimong: Amen. (p. 12)
+42,amin,amin,amin,PRON,all / everyone (the congregation),Amin: O Mannacabalin-amin a Dios... (p. 12)
+43,anac,anak,anak,NOUN,Son,Iti nagan ti Ama ken Anac ken ti Espiritu Santo. (p. 12)
+44,anacmo,anakmo,anak,NOUN,Your Son,...ti Bugbugtong nga Anacmo... (p. 21)
+45,angeles,angheles,anghel,NOUN,angels,...makiranudcami cadagiti angeles... (p. 21)
+46,angin,angin,angin,NOUN,wind / winds,...cadagiti bagyo ken angin... (p. 18)
+47,angol,angol,angol,NOUN,pestilence / epidemic,...cadagiti didigra ken angol... (p. 18)
+48,aniaman,aniaman,ania,DET,any / whatever,...aniaman a sabsabali a banbanag... (p. 19)
+49,apit,apit,apit,NOUN,harvest / crop yield,...cadagiti panagkirang ti apit... (p. 18)
+50,apo,apo,apo,NOUN,Lord,Iti nagan ti Apo! (p. 12)
+51,apoc,apok,apo,NOUN,my Lord,...gapu iti bilin ni Apoc a Jesu-Cristo... (p. 13)
+52,apomi,apomi,apo,NOUN,our Lord (excluding the addressee),...Ama ti Apomi a Jesu-Cristo... (p. 17)
+53,apostoles,apostoles,apostol,NOUN,apostles,Aldaw Dagiti Apostoles Ken Evangelistas... (p. 21)
+54,apostolica,apostolika,apostoliko,ADJ,apostolic,...Iglesia Cristiana Apostolica. (p. 16)
+55,apuy,apuy,apuy,NOUN,fire,...dagiti amin a didigra ti apuy ken danum... (p. 18)
+56,aramid,aramid,aramid,NOUN,deed / work / action,...iti nasayaat nga aramid. (p. 17)
+57,aramidenyo,aramidenyo,aramid,VERB,"do this, all of you",Daytoy aramidenyo a panglaglagipyo Caniac. (p. 22)
+58,ari,ari,ari,NOUN,kings / rulers,Aldaw Dagiti Tallo Nga Ari... (p. 20)
+59,arimi,arimi,ari,NOUN,our King (excluding the addressee),"Apo Dios, Arimi... (p. 14)"
+60,asim,asim,asi,NOUN,Your mercy / Your compassion,...gapu ti naayat nga asim... (p. 25)
+61,asina,asina,asi,NOUN,His mercy / His compassion,Agnanayon latta ti asina. (p. 25)
+62,asugmi,asugmi,asug,NOUN,our supplication / our cry for help,...asugmi awatem. (p. 14)
+63,awan,awan,awan,VERB,there is no / is without,...awan inggana. (p. 19)
+64,awanan-tulaw,awanan-tulaw,tulaw,ADJ,undefiled / unblemished / pure,...iti awanan-tulaw a doctrina ti Saom... (p. 18)
+65,awanto,awanto,awan,VERB,there will be no / will have no,...a ti pagarianna awanto ti patinggana. (p. 16)
+66,awatem,awatem,awat,VERB,receive / accept (addressed to one person),"Awatem, O Dios, dagiti bagbagi ken carcaruami... (p. 19)"
+67,awaten,awaten,awat,VERB,accept / receive,...tapno awaten ken bigbigenda coma dagiti tuocda... (p. 18)
+68,awatenyo,awatenyo,awat,VERB,"receive / take, all of you","Awatenyo, canenyo; daytoy ti bagic... (p. 22)"
+69,ay-ayatec,ay-ayatek,ayat,VERB,I love / whom I love,Dacayo nga ay-ayatec iti nagan ti Apo! (p. 12)
+70,aywanannanto,aywanannanto,aywan,VERB,it will guard / it will keep,...aywanannanto dagiti puspusoyo ken dagiti panunotyo... (p. 17)
+71,babaen,babaen,babaen,ADP,through / by means of,...babaen iti Santo nga Espiritum... (p. 18)
+72,bagbagi,bagbagi,bagi,NOUN,bodies (our bodies in context),...dagiti bagbagi ken carcaruami... (p. 19)
+73,bagi,bagi,bagi,NOUN,body,...ti bagi ken cararua. (p. 18)
+74,bagic,bagik,bagi,NOUN,my body,...daytoy ti bagic a naited a maipaay cadacayo. (p. 22)
+75,bagim,bagim,bagi,PRON,"Yourself (literally, Your body / self)",...ipamatmatmo ti bagim a sisasagana a tulong... (p. 19)
+76,bagyo,bagyo,bagyo,NOUN,storm / typhoon,...cadagiti bagyo ken angin... (p. 18)
+77,balangatam,balangatam,balangat,VERB,crown / adorn (addressed to one person),...ket balangatam ida iti pamendicionmo. (p. 19)
+78,banbanag,banbanag,banag,NOUN,things / matters,...aniaman a sabsabali a banbanag... (p. 19)
+79,baro,baro,baro,ADJ,new,...daytoy a copa isu ti baro a tulag iti darac... (p. 23)
+80,basaen,basaen,basa,VERB,read / shall read,Basaen ti Pastor ti napili a SURAT. (p. 15)
+81,basbasol,basbasol,basol,NOUN,sins / transgressions,...dagiti basbasol ti kinaagtutubomi... (p. 18)
+82,basbasolco,basbasolko,basol,NOUN,my sins,Ket pinacawanmo dagiti basbasolco. (p. 12)
+83,basbasolmi,basbasolmi,basol,NOUN,our sins (excluding the addressee),...cadagiti basbasolmi... (p. 22)
+84,basbasoltayo,basbasoltayo,basol,NOUN,our sins (including the addressee),...ipudnotayo dagiti basbasoltayo... (p. 12)
+85,basbasolyo,basbasolyo,basol,NOUN,your sins (plural addressee),...naited iti patay gapu cadagiti basbasolyo. (p. 24)
+86,basol,basol,basol,NOUN,sin,...Nangiccat iti basol ti lubong... (p. 14)
+87,basolyo,basolyo,basol,NOUN,your sin (plural addressee),...iti pannacapacawan ti basolyo. (p. 23)
+88,bautista,bautista,Bautista,PROPN,Baptist (in John the Baptist),...ni Juan Bautista... (p. 20)
+89,bayat,bayat,bayat,ADP,during / in the course of,Iti bayat ti panagiwaras... (p. 24)
+90,baybay-an,baybay-an,bay-a,VERB,forsake / abandon (under negation in this passage),...a dinacam' baybay-an... (p. 25)
+91,bendicion,bendision,bendision,NOUN,blessing / benediction,...cadagiti benbendicion a saan a makita... (p. 20)
+92,bendicionannaca,bendisionannaka,bendision,VERB,may He bless you (singular addressee),Ti Apo bendicionannaca ken salimetmetannaca! (p. 26)
+93,bendito,bendito,bendito,ADJ,blessed,"O Bendito, O Bendito, Bendito ti umay 'ti Nagan iti Apo... (p. 22)"
+94,benditoendaca,benditoendaka,bendito,VERB,we bless You (singular addressee),"Dayawendaca, benditoendaca... (p. 14)"
+95,benditoentayo,benditoentayo,bendito,VERB,let us bless (including the addressee),Benditoentayo ti Apo. (p. 26)
+96,biag,biag,biag,NOUN,life,...iti biag nga agnanayon! (p. 24)
+97,bigbigec,bigbigek,bigbig,VERB,I acknowledge / I recognize,Bigbigec ti maymaysa a pammautizar... (p. 16)
+98,bigbigenda,bigbigenda,bigbig,VERB,they acknowledge / may they recognize,...tapno awaten ken bigbigenda coma dagiti tuocda... (p. 18)
+99,bilin,bilin,bilin,NOUN,command / charge,...gapu iti bilin ni Apoc a Jesu-Cristo... (p. 13)
+100,binang-arannaccami,binang-arannakami,bang-ar,VERB,You have refreshed us / You have comforted us,...ta binang-arannacami babaen iti daytoy a paraburmo... (p. 25)
+101,bisin,bisin,bisin,NOUN,hunger / famine,...ken iti bisin... (p. 18)
+102,bugbugtong,bugbugtong,bugbugtong,ADJ,only / only-begotten (of the Son),...ti Bugbugtong nga Anacmo... (p. 21)
+103,bumangonda,bumangonda,bangon,VERB,they may rise / they may rise again,...bumangonda coma manen iti biag... (p. 20)
+104,bunga,bunga,bunga,NOUN,fruit / result,...iyegmi ti bunga ti pammati... (p. 17)
+105,bungbunga,bungbunga,bunga,NOUN,fruits / crops / produce,Parang-ayem dagiti amin a bungbunga... (p. 19)
+106,buybuyot,buybuyot,buyot,NOUN,hosts / multitudes (of heaven),...amin a buybuyot ti langit... (p. 21)
+107,caanoman,kaanoman,kaano,ADV,forever / at all times,"...ita, ken caanoman, agnanayon. (p. 25)"
+108,caasiannacami,kaasiannakami,asi,VERB,have mercy on us (excluding the addressee),"...basol ti lubong, caasiannacami. (p. 23)"
+109,caasim,kaasim,asi,NOUN,Your mercy / Your compassion,...ket dawatemmi Kenca ti caasim... (p. 25)
+110,caasyannac,kaasiannak,asi,VERB,have mercy on me,"...ken caasyannac, siac a nababa ken nacacaasi a managbasol. (p. 12)"
+111,caasyannakami,kaasyannakami,asi,VERB,have mercy on us / have compassion on us,"...Nangiccat iti basol ti lubong, Caasyannakami!..."
+112,cabaelanmi,kabaelanmi,bael,NOUN,our abilities / our strength,"...ken amin met a cabaelanmi, agraman dagiti sagsagut nga iyegmi..."
+113,cabusormi,kabusormi,busor,NOUN,our enemies / our adversaries,...panangbalbaliwmo cadagiti puspuso dagiti cabusormi...
+114,cadacam,kadakami,dakami,PRON,to us / unto us (exclusive),Itdem cadacam' ita ti taraonmi iti inaldaw.
+115,cadacami,kadakami,dakami,PRON,to us / unto us (exclusive),...ipaaymo coma ida cadacami gapu iti napait a panagtuoc...
+116,cadacay,kadakayo,dakayo,PRON,with you / unto you (plural),Ti Apo maadda cadacay ita.
+117,cadacayo,kadakayo,dakayo,PRON,to you / unto you (plural),...ipacdaarco cadacayo amin ti gracia ni Apo Dios...
+118,cadacuada,kadakuada,dakuada,PRON,to them / unto them,...intedna cadacuada a cuncunana: Uminomcayo amin iti daytoy...
+119,cadagiti,kadagiti,dagiti,ADP,to the / for the / among the (plural oblique),...ipudnotayo dagiti basbasoltayo... cadagiti amin a tattao...
+120,cadatayo,kadatayo,datayo,PRON,to us / unto us (inclusive),...gapu cadatayo a tattao ken gapu iti pannacaisalacantayo.
+121,cadi,kadi,kadi,PART,please / pray (supplicatory particle),Macaayayo cadi Kenka met ti panangbalbaliwmo...
+122,calpasan,kalpasan,lepas,ADP,after / afterwards,"Calpasan, cuna ti Pastor: Ti talna ti Dios..."
+123,calpasanna,kalpasanna,lepas,ADV,afterwards / after that,"...ket calpasanna, maisawno ti Gloria Patri..."
+124,canayon,kanayon,kanayon,ADV,always / continually,...ket canayon a padpadayawandaca a cunaenmi...
+125,canenyo,kanenyo,kan,VERB,eat ye / eat (plural imperative),"Awatenyo, canenyo; daytoy ti bagic a naited..."
+126,cangatoan,kangatoan,ngato,ADJ,highest / highest heavens,"Hosanna, Hosanna, Hosanna 'diay cangatoan."
+127,caniac,kaniak,siak,PRON,to me / unto me,Daytoy aramidenyo a panglagipyo Caniac.
+128,cantaen,kantaen,kanta,VERB,to sing / let be sung,"Cantaen ti Himno, Numero ___"
+129,capitulo,kapitulo,kapitulo,NOUN,chapter,...ti capitulo ken versiculo ti EVANGELIO a mabasa.
+130,cappia,kappia,kappia,NOUN,peace,Ti cappia' ti Apo maadda cadacayo nga agnanayon.
+131,cararag,kararag,kararag,NOUN,prayer,TI CARARAG NGA AMAMI
+132,cararua,kararua,kararua,NOUN,soul / spirit,...pacadangran ken pagpeggadan ti bagi ken cararua.
+133,carcararuami,karkararuami,kararua,NOUN,our souls,"Awatem, O Dios, dagiti bagbagi ken carcararuami..."
+134,cas,kas,kas,ADP,as / like,A cas met idi punganay...
+135,casacbayan,kasakbayan,sakbay,ADP,before / prior to,...nga adda idi casacbayan dagiti amin a lub-lubong...
+136,casapulan,kasapulan,sapul,VERB,need / necessary / requirement,Ngem nangruna casapulan a dacami padayawandaca...
+137,casapulanmi,kasapulanmi,sapul,NOUN,our needs / what we need,Parang-ayem dagiti amin a bungbunga a casapulanmi ditoy daga...
+138,casasaadna,kasasaadna,saad,NOUN,His state / His condition / His human nature,"...ket Kencuana, iti casasaadna a tao, impamatmatmo ti kinaananay ti dayagmo."
+139,cascasdi,kaskasdi,kaskasdi,ADV,nevertheless / yet / notwithstanding,"...cascasdi a pakicacaasimi Kenca, O manangngaasi nga Ama..."
+140,casta,kasta,kasta,ADV,thus / so / likewise,"Casta met kenca. / cas sadi langit, casta met ditoy daga."
+141,cayatmo,kayatmo,kayat,VERB,Thou desirest / You wish,Dagitoy ken aniaman a sabsabali a banbanag a cayatmo a dawatennmi...
+142,cayo,kayo,kayo,NOUN,tree / wood (tree of the cross),...babaen iti cayo casta met babaen iti cayo ti cruz maparmec...
+143,ceremonia,seremonia,seremonia,NOUN,ceremony / rite / order,URNOS TI CEREMONIA TI COMULGAR
+144,collect,kolekta,collect,NOUN,Collect (opening liturgical prayer),Agcararag ti Pastor iti napili a COLLECT.
+145,coma,koma,koma,PART,may it be (optative prayer particle),Gloria coma iti Ama... / Umay coma ti pagariam.
+146,comulgar,komulgar,komulgar,VERB,to take communion / Holy Communion,URNOS TI PANAGDAYDAYAW (NO ADDA COMULGAR)
+147,congreso,kongreso,kongreso,PROPN,Congress,...nangruna iti Presidente ken Congreso ti Filipinas...
+148,copa,kopa,kopa,NOUN,cup / chalice,Casta met inalana ti copa idi calpasan ti panangrabi...
+149,cordero,kordero,kordero,NOUN,Lamb,...a pudpudno a Cordero ti Dios...
+150,corderot,kordero ti,kordero,NOUN,Lamb of (Lamb of God),"Apo Dios, Corderot' Dios, Anac ti Ama..."
+151,creda,kredo,kredo,NOUN,Creed,CREDA NICIA
+152,cristiana,kristiana,Kristo,ADJ,Christian,Ken mamatiac iti maysa nga Iglesia Cristiana Apostolica.
+153,cristo,kristo,Kristo,PROPN,Christ,Dayaw Kenca O Cristo! / Cristo caasiannacami!
+154,cruz,krus,krus,NOUN,cross,Nagtutuoc ken nailansa met iti cruz...
+155,cuam,kukuam,kukua,PRON,Thine / Yours,"Ta 'cuam ti pagarian, ken pannacabalin..."
+156,cuaresma,kwaresma,kwaresma,PROPN,Lent,Cuaresma: Ket idiay cruz intedmo ti pannacaisalacan...
+157,cucuam,kukuam,kukua,PRON,Thine own / Your possession,...ta ginatangnacami a cas cucuam tapno agbiagcami a maipaay Kenca.
+158,cuma,koma,koma,PART,as / so (in cas cuma: according to),...a cas cuma ti Nasantoan a Surat...
+159,cuna,kuna,kuna,VERB,says / said,"Calpasan, cuna ti Pastor: Ti talna ti Dios..."
+160,cunaen,kunaen,kuna,VERB,to say / says,"(Iti ipapanaw dagiti agcomulgar, cunaen ti Pastor:)"
+161,cunaenmi,kunaenmi,kuna,VERB,we say,"...ket canayon a padpadayawandaca a cunaenmi: Santo, Santo, Santo..."
+162,cunana,kunana,kuna,VERB,he says / said,(Ti Pastor itedna ti tinapay ket cunana:)
+163,cuncunana,kunkunana,kuna,VERB,saying,...pinisina ket intedna cadagiti adalanna a cuncunana: Awatenyo...
+164,dacami,dakami,dakami,PRON,we / us (exclusive),Ngem nangruna casapulan a dacami padayawandaca...
+165,dacayo,dakayo,dakayo,PRON,ye / you (plural),Dacayo nga ay-ayatec iti nagan ti Apo!
+166,daga,daga,daga,NOUN,earth / land,"Talna't daga, naimbag a nakem!"
+167,dagiti,dagiti,dagiti,DET,the (plural common determiner),...ipudnotayo dagiti basbasoltayo...
+168,dagitoy,dagitoy,daytoy,PRON,these,Dagitoy ken aniaman a sabsabali a banbanag...
+169,dakes,dakes,dakes,NOUN,evil / harm,...no di ket isalacannacami iti dakes;
+170,dalanna,dalanna,dalan,NOUN,His way,Adviento: A ti dalanna insagana ni Juan Bautista...
+171,damag,damag,damag,NOUN,news / tidings (Good News / Gospel),"...basaen ti Pastor ti Evangelio, wenno Naimbag a Damag."
+172,danum,danum,danum,NOUN,water,...cadagiti amin a didigra ti apuy ken danum...
+173,dara,dara,dara,NOUN,blood,"Alaenyo, inumenyo; daytoy ti pudno a dara ni Apo..."
+174,darac,darak,dara,NOUN,my blood,...daytoy a copa isu ti baro a tulag iti darac...
+175,daton,daton,daton,NOUN,offerings / gifts,Maurnong dagiti daton.
+176,dawatec,dawatek,dawat,VERB,I pray / I beseech / I ask,"...ket dawatec Kenca, iti saan a makedgan nga asim..."
+177,dawatennmi,dawatennami,dawat,VERB,we pray / we beseech,Naimpusoan a dawatennmi Kenca nga idalan ken iturayam...
+178,dawatentay,dawatentayo,dawat,VERB,let us pray / we ask (inclusive),...a dawatentay Kencuana iti nagan ni Apo Jesu-Cristo...
+179,dayag,dayag,dayag,NOUN,glory / splendor,...ken dayag ti ilim nga Israel.
+180,dayagmo,dayagmo,dayag,NOUN,Thy glory / Your glory,...intedmo cadacami ti baro a pannacaiparang-arang ti dayagmo...
+181,dayagna,dayagna,dayag,NOUN,His glory,Ti Apo paraniagenna ti dayagna kenca...
+182,dayaw,dayaw,dayaw,NOUN,praise / honor / glory,Dayaw Kenca O Cristo!
+183,dayawendaca,dayawendaka,dayaw,VERB,we praise Thee,"Dayawendaca, benditoendaca, pagrucbabandaca!"
+184,daydi,daydi,daydi,DET,that (remote past),...iti daydi met laeng a rabii a pannacayawatna...
+185,daytoy,daytoy,daytoy,PRON,this,Daytoy aramidenyo a panglagipyo Caniac.
+186,dei,dei,dei,NOUN,of God (Latin liturgical genitive),TI AGNUS DEI
+187,di,di,di,PART,not (negative particle),...no di ket isalacannacami iti dakes...
+188,diay,idiay,idiay,ADP,in / on / there,"Hosanna, Hosanna, Hosanna 'diay cangatoan."
+189,dica,dika,di,PART,do not Thou / do not,...ket dica iccaten ta Espiritum...
+190,didigra,didigra,digra,NOUN,disasters / pestilences / plagues,"...cadagiti didigra ken angol, cadagiti amin a didigra ti apuy ken danum..."
+191,dimittis,dimittis,dimittis,PROPN,Dimittis (Song of Simeon / Nunc Dimittis),TI NUNC DIMITTIS
+192,dinac,dinak,di,PART,do not me (cast me not away),Dinac papanawen dita sangoanam...
+193,dinacam,dinakami,di,PART,lead us not / do not leave us,Ket dinacam' yeg ti pannacasulisog...
+194,dios,dios,Dios,PROPN,God,O Mannacabalin-amin a Dios...
+195,diostayo,diostayo,Dios,NOUN,our God (inclusive),Pastor: Agyamantayo iti Apo a Diostayo.
+196,discipulusna,disipulosna,disipulo,NOUN,His disciples,...nagparang cadagiti amin a discipulusna...
+197,disso,disso,disso,NOUN,place,"...iti amin a tiempo ken disso, pagyamanandaca..."
+198,dita,dita,dita,ADP,there / from Thy (presence),Dinac papanawen dita sangoanam...
+199,ditoy,ditoy,ditoy,ADV,here / here on (earth),"...cas sadi langit, casta met ditoy daga."
+200,doctrina,doktrina,doktrina,NOUN,doctrine / teaching,...mataginayoncami coma iti awanan-tulaw a doctrina ti Saom...
+201,domini,domini,domini,NOUN,of the Lord (Latin liturgical genitive),TI PAX DOMINI
+202,dua,dua,dua,NUM,two,...cantaen ti gimong ti maysa wenno dua a Himno.
+203,dungdunggoem,dungdungngoem,dungngo,VERB,Thy beloved / whom Thou cherishest,...nangruna iti sagut ti dungdunggoem nga Anac...
+204,dusa,dusa,dusa,NOUN,punishment / chastisement,...ket rebbengco ti agsagaba iti dusa itan ken iti agnanayon.
+205,espiritu,espiritu,espiritu,NOUN,Spirit / Holy Spirit,Espiritu Santo
+206,espirituk,espirituk,espiritu,NOUN,my spirit,...ket pabaroem caniac toy Espirituk.
+207,espiritum,espiritum,espiritu,NOUN,Thy Spirit / Your Spirit,...ket dica iccaten ta Espiritum...
+208,evangelio,ebanghelio,ebanghelio,NOUN,Gospel,"Basaen ti Pastor ti Evangelio, wenno Naimbag a Damag."
+209,evangelistas,ebanghelista,ebanghelista,NOUN,Evangelists,Aldaw Dagiti Apostoles Ken Evangelistas
+210,excelsis,excelsis,excelsis,NOUN,in the highest (Latin liturgical title),TI GLORIA EXCELSIS
+211,filipinas,pilipinas,Pilipinas,PROPN,Philippines,...Presidente ken Congreso ti Filipinas...
+212,gapu,gapu,gapu,ADP,because of / on account of / for,...gapu cadatayo a tattao ken gapu iti pannacaisalacantayo.
+213,gaput,gapu ti,gapu,ADP,because of the / for the sake of,...pagyamandaca gaput' gloriam.
+214,gimong,gimong,gimong,NOUN,congregation / assembly,Tumacder ti gimong.
+215,ginatangnacami,ginatangnakami,gatang,VERB,Thou hast redeemed/bought us,...ta ginatangnacami a cas cucuam tapno agbiagcami a maipaay Kenca.
+216,gloria,gloria,gloria,NOUN,glory,Gloria coma iti Ama ken 'ti Anac ken 'ti Espiritu...
+217,gloriam,gloriam,gloria,NOUN,Thy glory / Your glory,Langit ken daga napno't gloriam...
+218,gloriat,gloria ti,gloria,NOUN,glory of (glory of God the Father),...ti cangatoan iti Gloriat' Dios Ama. Amen.
+219,gobernadores,gobernadores,gobernador,NOUN,governors,...dagiti Gobernadores ken ti Pagpandayan iti Linteg...
+220,gracia,grasia,grasia,NOUN,grace,...ipacdaarco cadacayo amin ti gracia ni Apo Dios...
+222,gradual,gradual,gradual,NOUN,gradual (chant sung between the readings at Mass),Kinantada ti gradual kalpasan ti umuna a basa. (They sang the gradual after the first reading.)
+223,gubat,gubat,gubat,NOUN,war,Nagsardeng ti gubat. (The war stopped.)
+224,gurada,,,,,
+225,himno,himno,himno,NOUN,hymn,Kinantami ti himno. (We sang the hymn.)
+226,hosanna,hosanna,hosanna,INTJ,hosanna (cry of praise),Hosanna iti ngato! (Hosanna in the highest!)
+227,ibabawic,ibabawik,bawi,VERB,I will take back / repent of (it),Ibabawik dagiti basolko. (I will repent of my sins.)
+228,icanawanawancami,ikanawanawankami,kanawan,VERB,guide us,Ikanawanawankami ni Apo iti dalan. (May the Lord guide us on the way.)
+229,iccam,ikkam,ikkan,VERB,give (to you); you give,Ikkam ti danum ti ubing. (Give the child water.)
+230,iccannaca,ikkannaka,ikkan,VERB,he/she gives (it) to you,Ikkannaka ti Dios iti bileg. (God gives you strength.)
+231,,,,,,
+232,iccaten,ikkaten,ikkat,VERB,remove it / take it away,Ikkatenna ti basolko. (He/she removes my sin.)
+233,ida,ida,ida,PRON,them (3rd person plural),Nakitak ida idiay plasa. (I saw them at the plaza.)
+234,idadaar,idadaar,daar,VERB,to proclaim / announce (someone/something),Idadaarna ti naimbag a damag. (He/she proclaims the good news.)
+235,idalan,idalan,dalan,VERB,to lead along; to set on the path,Idalannak iti umno a dalan. (Lead me on the right path.)
+236,idi,idi,idi,SCONJ,when (in the past); ago,"Idi immayko, nalpasen ti misa. (When I arrived, the Mass was over.)"
+237,idiay,idiay,idiay,ADP,there; at/in (a place away from speaker and listener),Agtrabahoak idiay Laoag. (I work in Laoag.)
+238,iglesia,iglesia,iglesia,NOUN,church,Napanak idiay iglesia. (I went to the church.)
+239,iglesiasm,,,,,
+240,ilim,ilim,ili,NOUN,your town / your people,Naimbag ti ilim. (Your town is good.)
+241,ima,ima,ima,NOUN,hand,Nadalus ti imak. (My hands are clean.)
+242,imatangda,imatangda,matang,VERB,they looked at / watched (it),Imatangda ti ay-ayam. (They watched the game.)
+243,imbaonmo,inbaonmo,baon,VERB,you sent,Inbaonmo ti anghelmo. (You sent your angel.)
+244,imbucbucna,imbukbukna,bukbuk,VERB,he/she poured out,Imbukbukna ti danum. (He/she poured out the water.)
+245,immuli,immuli,	uli,VERB,he/she went up/ climbed,Immuli ni tatang iti agdan. (Father went up the stairs.)
+246,impamatmatmo,impamatmatmo,matmat,VERB,you made known / revealed,Impamatmatmo ti pudno. (You revealed the truth.)
+247,imulam,imulam,mula,VERB,you planted (it),Imulam ti kamote idiay bantay. (You planted sweet potatoes on the mountain.)
+248,inalana,inalana,ala,VERB,he/she took (it),Inalana ti libro. (He/she took the book.)
+249,inaldaw,inaldaw,aldaw,ADV,daily; every day,Agkararagak inaldaw. (I pray every day.)
+250,inbaonmo,inbaonmo,baon,VERB,you sent,Inbaonmo ti surat. (You sent the letter.)
+251,incarina,inkarina,kari,VERB,he/she promised,Inkarina nga umay bigat. (He/she promised to come tomorrow.)
+252,incayo,inkayo,inka,VERB,go / come (you all),"Inkayo idiay simbaan. (Go to the church, all of you.)"
+253,inggana,inggana,inggana,ADP,until; as far as,Agtrabahoak inggana iti rabii. (I work until evening.)
+254,insagana,insagana,sagana,VERB,he/she prepared (it),Insagana ti pagpangan. (He/she prepared the meal.)
+255,insaganam,insaganam,sagana,VERB,you prepared (it),Insaganam ti pagpangan. (You prepared the meal.)
+256,insublina,insublina,subli,VERB,he/she returned (it),Insublina ti libro. (He/she returned the book.)
+257,intedmo,intedmo,ited,VERB,you gave,Intedmo kaniak ti tinapay. (You gave me bread.)
+258,intedna,intedna,ited,VERB,he/she gave,Intedna kaniak ti sagut. (He/she gave me a gift.)
+259,inton,inton,inton,SCONJ,when (in the future),"Inton umay ni Tatang, mangantayo. (When Father comes, we will eat.)"
+260,introita,introita,introito,NOUN,introit (entrance chant of the Mass),Kinantada ti introita. (They sang the introit.)
+261,inturayan,inturayan,turay,VERB,rule over / govern (it),Inturayanna ti pagarian. (He/she rules over the kingdom.)
+262,inumenyo,inumenyo,inum,VERB,drink it (you all),"Inumenyo daytoy a danum. (Drink this water, all of you.)"
+263,ipaaymo,ipaaymo,ipaay,VERB,you give / provide,Ipaaymo kadakami ti pagbiagmi. (You provide us our livelihood.)
+264,ipacdaarco,ipakdaarko,pakdaar,VERB,I will warn / inform,Ipakdaarko kenka ti napasamak. (I will inform you of what happened.)
+265,ipamatmatmo,ipamatmatmo,matmat,VERB,you make known / reveal,Ipamatmatmo ti pudno. (You reveal the truth.)
+266,ipapanaw,ipapanaw,panaw,VERB,to send off / let depart,Ipapanawna ti ubing. (He/she will send the child off.)
+267,ipapatay,ipapatay,patay,VERB,to have (someone) put to death,Ipapatayda ni Jesus. (They will have Jesus put to death.)
+268,ipudnoc,ipudnok,pudno,VERB,I affirm / confirm (as true),Ipudnok a pudno daytoy. (I affirm that this is true.)
+269,ipudnotayo,ipudnotayo,pudno,VERB,let us affirm / profess,Ipudnotayo ti pammatitayo. (Let us profess our faith.)
+270,isalacannacami,isalakannakami,salaka,VERB,he/she saves us,Isalakannakami ti Dios. (God saves us.)
+271,isaona,isaona,sao,VERB,he/she says it / utters it,Isaona ti pudno. (He/she says the truth.)
+272,isipmi,isipmi,isip,NOUN,our mind / our thoughts,Naimbag ti isipmi. (Our thoughts are good.)
+273,israel,Israel,Israel,PROPN,Israel,Ti Israel ket maysa a nasion. (Israel is a nation.)
+274,isu,isu,isu,PRON,he/she/it; that one,Isu ti nangted iti sagut. (He/she is the one who gave the gift.)
+275,isut,isu ti,isu,PRON,it is (he/she) who; that is the,Isu ti immay idi kalman. (It was he/she who came yesterday.)
+276,ita,ita,ita,ADV,today; now,Agtrabahoak ita. (I am working now.)
+277,itan,itan,itan,ADV,now; then,Mapanak itan. (I am going now.)
+278,itan-ocdaca,itan-okdaka,tan-ok,VERB,they exalt you,Itan-okdaka kadagiti kanta. (They exalt you in songs.)
+279,itan-ocmi,itan-okmi,tan-ok,VERB,we exalt (it),Itan-okmi ti nagan ni Apo. (We exalt the Lord's name.)
+280,itangadmi,itangadmi,tangad,VERB,we lift up / raise,Itangadmi ti matami iti langit. (We raise our eyes to heaven.)
+281,itangadyot,itangadyo ti,tangad,VERB,you (all) lift up the...,"Itangadyo ti imayo. (Lift up your hands, all of you.)"
+282,itannawagna,itan nawagna,awag,VERB,then he/she called,Itan nawagna ni Juan. (Then he/she called John.)
+283,itdem,itdem,ited,VERB,give (it) / you give,Itdem kaniak ti tinapay. (Give me the bread.)
+284,itdenmi,itdenmi,ited,VERB,we give (it),Itdenmi kenka ti sagut. (We give you a gift.)
+285,itdenna,itdenna,ited,VERB,he/she gives (it),Itdenna kaniak ti pagpangan. (He/she gives me food.)
+286,itedna,itedna,ited,VERB,he/she gives,Itedna ti sagut. (He/she gives the gift.)
+287,iti,iti,iti,ADP,in; at; to (oblique case marker),Napanak iti tiendaan. (I went to the store.)
+288,itoy,itoy,itoy,DET,this (oblique form),Agbiagtayo iti itoy a lubong. (We live in this world.)
+289,iturayam,iturayam,turay,VERB,you govern / rule (it),Iturayam ti pagilian. (You govern the country.)
+290,iyegmi,iyegmi,iyeg,VERB,we bring (it),Iyegmi ti sagut. (We bring the gift.)
+291,iyu-uli,,,,,
+292,jesu-cristo,Jesu-Cristo,Jesu-Cristo,PROPN,Jesus Christ,Mamati kami ken Jesu-Cristo. (We believe in Jesus Christ.)
+293,jesus,Jesus,Jesus,PROPN,Jesus,Ni Jesus ti Apotayo. (Jesus is our Lord.)
+294,juan,Juan,Juan,PROPN,John,Nagbautisar ni Juan iti Jordan. (John baptized in the Jordan.)
+295,ken,ken,ken,CCONJ,and,Adda tinapay ken danum. (There is bread and water.)
+296,kenca,kenka,sika,PRON,to/for you,Intedko kenka ti libro. (I gave the book to you.)
+297,kencuana,kenkuana,isuna,PRON,to/for him/her,Intedko kenkuana ti libro. (I gave the book to him/her.)
+298,kenka,kenka,sika,PRON,to/for you,Agyamanak kenka. (I thank you.)
+299,ket,ket,ket,CCONJ,and; but (linker),Immay ni Juan ket nagtugaw. (John came and sat down.)
+300,kina,kina-,kina,X,(prefix) state/quality of being; forms abstract nouns,kinapintas (beauty) = kina- + napintas (beautiful)
+301,kinaagtutubomi,kinaagtutubomi,tubo,NOUN,our youth / our growing up,Naimbag ti kinaagtutubomi. (Our youth was good.)
+302,kinaananay,kinaananay,ananay,NOUN,gentleness / kindness,Nabatad ti kinaananay ni Nanang. (Mother's gentleness is evident.)
+303,kinacappia,kinakappia,kappia,NOUN,peace; peacefulness,Adda kappia iti pagtaengan. (There is peace in the home.)
+304,kinadakes,kinadakes,dakes,NOUN,badness; evil,Liklikan ti kinadakes. (Avoid evil.)
+305,kinadakesco,kinadakesko,dakes,NOUN,my wickedness,Ammok ti kinadakesko. (I know my wickedness.)
+306,kinadiosna,kinadiosna,dios,NOUN,his/her divinity,Naipakita ti kinadiosna kadakami. (His divinity was shown to us.)
+307,kinaimbag,kinaimbag,imbag,NOUN,goodness,Nakita ti kinaimbag ti Dios. (God's goodness is seen.)
+308,kinaimbagmo,kinaimbagmo,imbag,NOUN,your goodness,Naindaklan ti kinaimbagmo. (Your goodness is great.)
+309,kinakirang,kinakirang,kirang,NOUN,lack; deficiency,Nakitak ti kinakirangda. (I saw their lack.)
+310,kinalinteg,kinalinteg,linteg,NOUN,righteousness; justice,Agbiag iti kinalinteg. (Live in righteousness.)
+311,kinamanangngaasim,kinamanangngaasim,aasi,NOUN,your mercifulness / mercy,Dakkel ti kinamanangngaasim. (Your mercy is great.)
+312,kinapacumbaba,kinapakumbaba,pakumbaba,NOUN,humility,Nasayaat ti kinapakumbaba. (Humility is good.)
+313,kinapudno,kinapudno,pudno,NOUN,truth; truthfulness,Ibagam ti kinapudno. (Tell the truth.)
+314,kinapudnom,kinapudnom,pudno,NOUN,your truth,Ipakitam kaniak ti kinapudnom. (Show me your truth.)
+315,kinapudnona,kinapudnona,pudno,NOUN,his/her truth,Agsaksi kami iti kinapudnona. (We witness to his truth.)
+316,kinarang-ay,kinarang-ay,rang-ay,NOUN,prosperity; abundance,Immay ti kinarang-ay iti probinsia. (Prosperity came to the province.)
+317,kinasanto,kinasanto,santo,NOUN,holiness,Agbiag iti kinasanto. (Live in holiness.)
+318,kinatan-oc,kinatan-ok,tan-ok,NOUN,highness; loftiness; majesty,Dayawen ti kinatan-okna. (Praise his majesty.)
+319,kinunac,kinunak,kuna,VERB,I said,Kinunak nga umayak. (I said that I would come.)
+320,kyrie,kyrie,kyrie,INTJ,"Lord ('Kyrie eleison': Lord, have mercy)","Kyrie, kaasiannakami. (Lord, have mercy on us.)"
+321,la,la,la,PART,just; only; then (particle),Isu la. (That is all.)
+322,lablabsingco,lablabsingko,lablabsing,NOUN,I disobey (it)/ my disobedience,Lablabsingko ti bilin ni Nanang. (I disobey Mother's command.)
+323,lablabsingmi,lablabsingmi,lablabsing,NOUN,we disobey (it)/ our disobedience,Lablabsingmi ti bilin ti Dios. (We disobey God's command.)
+324,laeng,laeng,laeng,ADV,only; just; still,Maysa laeng ti Dios. (There is only one God.)
+325,lagipenen,lagipenen,lagip,VERB,remember (it) now,Lagipenen ni Apo dagiti agbabawi. (The Lord now remembers those who repent.)
+326,langit,langit,langit,NOUN,heaven; sky,Adda ti Dios idiay langit. (God is in heaven.)
+327,langlangit,langlangit,langit,NOUN,the heavens; skies,Nalawa ti langlangit. (The heavens are vast.)
+328,lasag,lasag,lasag,NOUN,flesh; meat,Naimas ti lasag ti baka. (The beef is delicious.)
+329,latta,latta,latta,ADV,just; merely; for nothing,Intedna latta. (He/she gave it for free.)
+330,linteg,linteg,linteg,ADJ,righteous; upright,Nalinteg a tao ni Jose. (Joseph is a righteous man.)
+331,liwliwaem,liwliwaem,liwliwa,VERB,comfort / console (addressed to one person),"Liwliwaem ti pusok, Apo. (Comfort my heart, Lord.)"
+332,lub-lubong,lub-lubong,lubong,NOUN,worlds / all the world,Ti lub-lubong ket pinarsua ti Dios. (The worlds were created by God.)
+333,lubong,lubong,lubong,NOUN,world,Isu ti silaw ti lubong. (He is the light of the world.)
+334,lumawlawa,lumawlawa,lawlawa,VERB,spreads / expands / becomes wide,Lumawlawa ti pammati dagiti tattao. (The faith of the people spreads.)
+335,maadda,maadda,adda,VERB,may be present / may exist,Maadda koma ti talna iti pusoyo. (May peace be present in your hearts.)
+336,maaramid,maaramid,aramid,VERB,be done / be made / happen,Maaramid koma ti pagayatanmo. (May your will be done.)
+337,mabalin,mabalin,balin,VERB,can / be possible / may,Mabalin nga agkararag tayo. (We can pray.)
+338,mabalinmi,mabalinmi,balin,VERB,we can / we are able (excluding the addressee),Mabalinmi nga tulongan dagiti agrigat. (We can help those who suffer.)
+339,mabasa,mabasa,basa,VERB,be read / can be read,Mabasa ti Sao ti Dios iti gimong. (The Word of God is read in the assembly.)
+340,macaayayo,makaayayo,ayayo,ADJ,attractive / pleasing / charming,Macaayayo ti panaglangon ti sabong. (The blooming of the flower is pleasing.)
+341,macabasol,makabasol,basol,VERB,blame / find fault,Dika agmacabasol iti padam. (Do not blame your neighbor.)
+342,macadadael,makadadael,dadael,VERB,destructive / can destroy,Ti basol ket macadadael. (Sin is destructive.)
+343,macanawan,makanawan,kanawan,ADJ,right / right-hand,Ti macanawan nga ima ti Apo. (The right hand of the Lord.)
+344,macapagpaay,makapagpaay,paay,VERB,can provide / beneficial / availing,Macapagpaay ti kararag iti biag. (Prayer is beneficial to life.)
+345,madaydayaw,madaydayaw,dayaw,ADJ,glorious / praiseworthy,Madaydayaw ti nagan ti Apo. (The name of the Lord is glorious.)
+346,magistradosmi,magistradosmi,magistrado,NOUN,our magistrates,Dagiti magistradosmi ket mangituray. (Our magistrates govern.)
+347,maicari,maikari,kari,VERB,be promised / can be promised,Maikari ti agnanayon a biag. (Eternal life is promised.)
+348,maicaricami,maikarikami,kari,VERB,we are promised / we may be promised (excluding the addressee),Maikarikami ti pammakawan. (We are promised forgiveness.)
+349,maicascasaba,maikaskasaba,kasaba,VERB,be preached / can be preached,Maikaskasaba ti evangelio. (The gospel is preached.)
+350,maicatlo,maikatlo,katlo,ADJ,third,Maikatlo nga aldaw ti panagungar. (The third day of resurrection.)
+351,maidalancami,maidalankami,dalan,VERB,we may be guided (excluding the addressee),Maidalankami koma ti Apo. (May we be led by the Lord.)
+352,maipaay,maipaay,paay,VERB,be given / be offered / be dedicated,Maipaay ti dayaw ken gloria. (Honor and glory are offered.)
+353,maiparang-arang,maiparang-arang,parang,VERB,be shown / be displayed,Maiparang-arang ti pammati. (Faith is shown.)
+354,maiparbeng,maiparbeng,parbeng,VERB,be fitting / be proper,Maiparbeng ti panagyaman. (Thanksgiving is fitting.)
+355,maisawno,maisawno,sao,VERB,be said / be uttered,Maisawno ti pudno. (The truth is uttered.)
+356,maitutup,maitutup,tutup,VERB,be fitting / be suitable / correspond,Maitutup ti aramid ken sao. (Deeds and words correspond.)
+357,maiwaragawag,maiwaragawag,waragawag,VERB,be proclaimed / be announced,Maiwaragawag ti naimbag a damag. (Good news is proclaimed.)
+358,maiyannurot,maiyannurot,annurot,VERB,be followed / be complied with,Maiyannurot ti linteg ti Dios. (God's law is followed.)
+359,maiyasidegcam,maiyasidegkami,sideg,VERB,we may be brought near / we may be near (excluding the addressee),Maiyasidegkami koma iti Apo. (May we be brought near to the Lord.)
+360,makedgan,makedngan,kedngan,VERB,be met / meet (with),Makedngan ti kararag. (Prayer is met.)
+361,makicuyog,makikuyog,kuyog,VERB,join / accompany / go with,Makikuyog kami kenka. (We join with you.)
+362,makipagbiag,makipagbiag,biag,VERB,live with / coexist,Makipagbiag kami iti talna. (We live in peace.)
+363,makipagturay,makipagturay,turay,VERB,reign with / rule together with,Makipagturay kami ken Kristo. (We reign with Christ.)
+364,makiranud,makiranud,ranud,VERB,share / participate / have a share,Makiranud kami iti rag-o. (We share in the joy.)
+365,makiranudcami,makiranudkami,ranud,VERB,we may share / we may participate (excluding the addressee),Makiranudkami iti bendision. (May we share in the blessing.)
+366,makita,makita,kita,VERB,be seen / see,Makita ti gloria ti Apo. (The glory of the Lord is seen.)
+367,maliclicanda,maliklikanda,liklik,VERB,they may be surrounded / encircled,Maliklikanda dagiti kabusor. (They are surrounded by enemies.)
+368,mamagcappia,mamagkappia,kappia,VERB,make peace / reconcile,Mamagkappia ti Apo. (The Lord makes peace.)
+369,mamati,mamati,pati,VERB,believe,Mamati kami iti Dios. (We believe in God.)
+370,mamatiac,mamatiak,pati,VERB,I believe,Mamatiak iti Apo. (I believe in the Lord.)
+371,mammadto,mammadto,padto,NOUN,prophet,Mammadto ni Juan. (John is a prophet.)
+372,managbasol,managbasol,basol,NOUN,sinner,Managbasol kami amin. (We are all sinners.)
+373,manangngaasi,manangngaasi,asi,ADJ,merciful / compassionate,Manangngaasi ti Apo. (The Lord is merciful.)
+374,manen,manen,manen,ADV,again,Agsubli manen ti Apo. (The Lord returns again.)
+375,mangdaeg,mangdaeg,daeg,VERB,defeats / overcomes,Mangdaeg ti naimbag iti dakes. (Good overcomes evil.)
+376,mangibaonca,mangibaonka,baon,VERB,sends you / will send you (singular addressee),Mangibaonka ti Apo. (The Lord sends you.)
+377,mangisalacan,mangisalakan,salakan,VERB,saves / rescues,Mangisalakan ti Dios. (God saves.)
+378,mangisiksikat,mangisiksikat,siksikat,VERB,searches / investigates,Mangisiksikat ti puso. (He searches the heart.)
+379,mangited,mangited,ited,VERB,gives,Mangited ti Apo iti parabur. (The Lord gives grace.)
+380,mangituray,mangituray,turay,VERB,rules / governs,Mangituray ti Dios. (God rules.)
+381,mangmocom,mangmokom,mokom,NOUN,judge / one who judges,Mangmokom ti lubong. (He judges the world.)
+382,mangsalacnib,mangsalaknib,salaknib,VERB,protects / shields / defends,Mangsalaknib ti Apo. (The Lord protects.)
+383,mangsilnag,mangsilnag,silnag,VERB,shines / gives light,Mangsilnag ti init. (The sun shines.)
+384,mannacabalin-amin,mannakabalin-amin,balin,ADJ,almighty / all-powerful,Mannakabalin-amin a Dios. (Almighty God.)
+385,mannubbotmi,mannubbotmi,subbot,NOUN,our Redeemer,Mannubbotmi ni Jesu-Cristo. (Jesus Christ is our Redeemer.)
+386,mapapigsa,mapapigsa,pigsa,VERB,strengthened / becomes strong,Mapapigsa ti pammati. (Faith is strengthened.)
+387,maparmec,maparmek,parmek,VERB,be overcome / be conquered,Maparmek ti dakes. (Evil is overcome.)
+388,masaksakit,masaksakit,sakit,ADJ,sick / ill / suffering,Masaksakit ti adipen. (The servant is sick.)
+389,masao,masao,sao,VERB,be spoken / be said,Masao ti pudno. (The truth is spoken.)
+390,mataginayoncami,mataginayonkami,taginayon,VERB,we may be preserved / we may be kept (excluding the addressee),Mataginayonkami koma. (May we be preserved.)
+391,maurnong,maurnong,urnong,VERB,be gathered / be collected / assemble,Maurnong dagiti tattao. (The people are gathered.)
+392,maymaysa,maymaysa,maysa,ADJ,one / united,Maymaysa ti puso. (One heart.)
+393,maymaysaca,maymaysaka,maysa,ADJ,you are one / you alone (singular addressee),Maymaysaka a Dios. (You alone are God.)
+394,maymaysacayo,maymaysakayo,maysa,ADJ,you are one / you alone (plural addressee),Maymaysakayo a tattao. (You are one people.)
+395,maysa,maysa,maysa,ADJ,one,Maysa a Dios. (One God.)
+396,mesias,mesias,Mesias,PROPN,Messiah,Ni Jesus ti Mesias. (Jesus is the Messiah.)
+397,met,met,met,PART,also / too / indeed,Siasino met? (Who indeed?)
+398,ministrosna,ministrosna,ministro,NOUN,his ministers / his servants,Dagiti ministrosna. (His ministers.)
+399,misterio,misterio,misterio,NOUN,mystery,Ti misterio ti pammati. (The mystery of faith.)
+400,na-amaan,naamaan,ama,ADJ,fatherly / paternal,Naamaan a panagayat. (Fatherly love.)
+401,naayaban,naayaban,ayab,VERB,called / invited,Naayaban kami iti gimong. (We are called to the assembly.)
+402,naayat,naayat,ayat,ADJ,loving / kind / affectionate,Naayat ti Apo. (The Lord is loving.)
+403,nababa,nababa,baba,ADJ,low / humble,Nababa ti puso. (Humble heart.)
+404,nabiag,nabiag,biag,ADJ,alive / living,Nabiag ti Sao. (The Word is alive.)
+405,nacacaasi,nakakaasi,asi,ADJ,miserable / wretched / pitiful,Nakakaasi kami. (We are miserable.)
+406,nacristianoan,nakristianoan,Kristiano,ADJ,Christianized / Christian,Nakristianoan a daga. (Christianized land.)
+407,nadalug,nadalug,dalug,ADJ,mature / ripe / aged,Nadalug ti apit. (The harvest is ripe.)
+408,nadalus,nadalus,dalus,ADJ,clean / pure,Nadalus ti puso. (Pure heart.)
+409,nadayag,nadayag,dayag,ADJ,glorious / famous / renowned,Nadayag ti naganmo. (Your name is glorious.)
+410,nadiosan,nadiosan,Dios,ADJ,divine / godly,Nadiosan a panangisuro. (Divine teaching.)
+411,nadutocan,nadutokan,dutok,VERB,appointed / ordained,Nadutokan a pastor. (Ordained pastor.)
+412,nagan,nagan,nagan,NOUN,name,Ti nagan ti Apo. (The name of the Lord.)
+413,naganmo,naganmo,nagan,NOUN,your name,Naganmo ti dayawenmi. (We praise your name.)
+414,nagasat,nagasat,gasat,ADJ,blessed / fortunate,Nagasat ti tattao. (Blessed are the people.)
+415,nagbalin,nagbalin,balin,VERB,became / has become,Nagbalin a lasag. (Became flesh.)
+416,nagloriaan,nagloriaan,gloria,VERB,glorified / made glorious,Nagloriaan ti naganmo. (Your name is glorified.)
+417,nagparang,nagparang,parang,VERB,appeared / manifested,Nagparang ti Apo. (The Lord appeared.)
+418,nagsao,nagsao,sao,VERB,spoke / said,Nagsao ti Dios. (God spoke.)
+419,nagtutuoc,nagtutuok,tuoc,VERB,shouted / cried out,Nagtutuok dagiti tattao. (The people cried out.)
+420,nagungar,nagungar,ungar,VERB,rose / resurrected,Nagungar ni Kristo. (Christ rose.)
+421,naibucbuc,naibukbuk,bukbuk,VERB,was poured out,Naibukbuk ti Espiritu. (The Spirit was poured out.)
+422,naibuyat,naibuyat,buyat,VERB,was stretched out / extended,Naibuyat ti ima. (The hand was stretched out.)
+423,naicali,naikali,kali,VERB,was buried / was dug,Naikali ti bagi. (The body was buried.)
+424,naidaton,naidaton,daton,VERB,was offered / presented,Naidaton ti sakripisio. (The sacrifice was offered.)
+425,nailansa,nailansa,lansa,VERB,was nailed,Nailansa iti krus. (Nailed to the cross.)
+426,naimbag,naimbag,imbag,ADJ,good / kind,Naimbag ti Apo. (The Lord is good.)
+427,naimpusoan,naimpusoan,puso,ADJ,sincere / heartfelt,Naimpusoan a kararag. (Sincere prayer.)
+428,naincalintegan,nainkalintegan,kalintegan,ADJ,justified / righteous,Nainkalintegan ti biag. (Righteous life.)
+429,naipangato,naipangato,ngato,VERB,was lifted up / exalted,Naipangato ti nagan. (The name was lifted up.)
+430,naited,naited,ited,VERB,was given,Naited ti parabur. (Grace was given.)
+431,nakem,nakem,nakem,NOUN,mind / will / inner self,Ti nakem ti Dios. (The mind of God.)
+432,nakitanan,nakitanan,kita,VERB,saw / was seen by him,Nakitanan ti gloria. (He saw the glory.)
+433,namarsua,namarsua,parsua,VERB,created / Creator,Namarsua ti langit ken daga. (Creator of heaven and earth.)
+434,nanamenmi,nanamenmi,nanam,VERB,we feel,Nanamenmi ti kinaimbag. (We tasted goodness.)
+435,nangala,nangala,ala,VERB,took / received,Nangala ti tinapay. (He took the bread.)
+436,nangayab,nangayab,ayab,VERB,called / invited,Nangayab ti Apo. (The Lord called.)
+437,nangiccat,nangikkat,ikkat,VERB,removed / took away,Nangikkat ti basol. (He removed sin.)
+438,nangipacaammo,nangipakaammo,pakaammo,VERB,made known / revealed,Nangipakaammo ti pudno. (He revealed the truth.)
+439,nangparmec,nangparmek,parmek,VERB,overcame / conquered,Nangparmek ti patay. (He conquered death.)
+440,nangruna,nangruna,runa,ADV,especially / foremost / chiefly,Nangruna ti ayat. (Love is foremost.)
+441,napait,napait,pait,ADJ,bitter,Ngem naimpusoan ti panaglagidingitco gapu cadacuada ken sipapasnec nga ibabawic id...
+442,naparsua,naparsua,parsua,VERB,was created / created,"Ken mamatiac iti maymaysa nga Apo, Jesu-Cristo, a Bugbugtong nga Anac ti Dios, nga..."
+443,napili,napili,pili,ADJ,chosen / selected,Pastor: Agcararag ti Pastor iti napili a COLLECT
+444,napno't,napnot,pno,ADJ,full of,"Amin: Santo, Santo, Santo O Dios, ti buybuyot; Langit ken daga napno't gloriam; Ho..."
+445,napudno,napudno,pudno,ADJ,true / faithful / sincere,"Umasidegtayo ita iti napudno a puso, ket ipudnotayo dagiti basbasoltayo ken Apo Di..."
+446,nasantoan,nasantoan,santo,ADJ,holy / sacred,Ngem naimpusoan ti panaglagidingitco gapu cadacuada ken sipapasnec nga ibabawic id...
+447,nasayaat,nasayaat,sayaat,ADJ,good / fine / proper,"Agcararag ti Pastor: Mannacabalin-amin ken manangngaasi a Dios, Ama ti Apomi a Jes..."
+448,nasged,nasged,sged,ADJ,fervent / intense / ardent,"Pastor: Itdenmi ti panagyaman Kenca, Mannacabalin-amin a Dios, ta binang-arannacca..."
+449,nasursuroanda,nasursuroanda,suro,VERB,they were instructed / taught,Aldaw Dagiti Apostoles Ken Evangelistas: Gapu ta simamael nga inturayan ken sinala...
+450,natalna,natalna,talna,ADJ,peaceful / quiet,"Itdem met ti salun-at ken kinarang-ay cadagiti amin nga adda iti turay, nangruna i..."
+451,natay,natay,tay,VERB,died / dead,Nagtutuoc ken naicali; ket nagungar maicatlo nga aldaw a cas cuma ti Nasantoan a S...
+452,naulimec,naulimek,ulimek,ADJ,quiet / silent,"Itdem met ti salun-at ken kinarang-ay cadagiti amin nga adda iti turay, nangruna i..."
+453,nawadwad,nawadwad,wadwad,ADJ,abundant / bountiful,"Ket nupay maicaricami coma iti naincalintegan a pungtotmo ken nawadwad a pannusam,..."
+454,nga,nga,nga,SCONJ,that / which / who (linker),Pastor: Dacayo nga ay-ayatec iti nagan ti Apo
+455,ngarud,ngarud,ngarud,ADV,therefore / so / then,Ngarud
+456,ngato,ngato,ngato,NOUN,above / high / heaven,Pastor: Gloria ti Dios idiay ngato
+457,ngem,ngem,ngem,CCONJ,but / however,Ngem naimpusoan ti panaglagidingitco gapu cadacuada ken sipapasnec nga ibabawic id...
+458,ni,ni,ni,DET,proper noun marker (singular),"Umasidegtayo ita iti napudno a puso, ket ipudnotayo dagiti basbasoltayo ken Apo Di..."
+459,nicia,nicia,nicia,PROPN,Nicaea (as in Nicene Creed),CREDA NICIA
+460,no,no,no,SCONJ,if / when,URNOS TI PANAGDAYDAYAW (NO ADDA COMULGAR)
+461,numero,numero,numero,NOUN,number,"Cantaen ti Himno, Numero ___"
+462,nunc,nunc,nunc,PROPN,Nunc (Latin: Nunc Dimittis),TI NUNC DIMITTIS
+463,nupay,nupay,nupay,SCONJ,although / even though,"Ket nupay maicaricami coma iti naincalintegan a pungtotmo ken nawadwad a pannusam,..."
+464,o,o,o,INTJ,O (exclamation / vocative),"Amin: O Mannacabalin-amin a Dios, manangngaasi nga Ama, siac a nababa a managbasol..."
+465,pabaroem,pabaroem,baro,VERB,renew / make new (you),Gimong: Itdem O Dios ti nadalus a puso; ket pabaroem caniac toy Espirituk
+466,pacadangran,pakadangran,dangran,NOUN,harm / danger / injury,"Ket nupay maicaricami coma iti naincalintegan a pungtotmo ken nawadwad a pannusam,..."
+467,pacaisalacanan,pakaisalakanan,salakan,NOUN,salvation / means of salvation,"nga Iglesiasm, agraman cadagiti papastor ken ministrosna, tapno mataginayoncami co..."
+468,pacapacawanan,pakapakawanan,pakawan,NOUN,forgiveness / remission,"Bigbigec ti maymaysa a pammautizar a pacapacawanan ti basol, ket padaanac ti panag..."
+469,pacawanencayo,pakawanenkayo,pakawan,VERB,forgives you,"Pastor: Itoy a panangipudnoyo cadagiti basbasolyo, siac, gapu iti saadco a cas naa..."
+470,pacawanennacami,pakawanennakami,pakawan,VERB,forgive us,"Ket pacawanennacami cadagiti basbasolmi, a cas met pammacawanmi cadagiti macabasol..."
+471,padaanac,padaanak,daan,VERB,I await / I look forward to,"Bigbigec ti maymaysa a pammautizar a pacapacawanan ti basol, ket padaanac ti panag..."
+472,padayawan,padayawan,dayaw,VERB,to praise / glorify,"Ngarud, makiranudcami cadagiti angeles ken panguloen dagiti angeles ken amin a buy..."
+473,padayawandaca,padayawandaka,dayaw,VERB,we praise You,Aldaw Dagiti Tallo Nga Ari: Ket ita padayawandaca gapu ta inbaonmo cadacami ti Bug...
+474,padpadayawandaca,padpadayawandaka,dayaw,VERB,we continually praise You,"Ngarud, makiranudcami cadagiti angeles ken panguloen dagiti angeles ken amin a buy..."
+475,paganiam,paganiam,ani,NOUN,Your harvest,"nga Iglesiasm, agraman cadagiti papastor ken ministrosna, tapno mataginayoncami co..."
+476,pagariam,pagariam,ari,NOUN,Your kingdom,"nga Iglesiasm, agraman cadagiti papastor ken ministrosna, tapno mataginayoncami co..."
+477,pagarian,pagarian,ari,NOUN,kingdom,"Amin: Ta 'cuam ti pagarian, ken pannacabalin, ken ti gloria nga awan inggana"
+478,pagarianna,pagarianna,ari,NOUN,His kingdom,Nagtutuoc ken naicali; ket nagungar maicatlo nga aldaw a cas cuma ti Nasantoan a S...
+479,pagayatam,pagayatam,ayat,NOUN,Your will,"Agcararag ti Pastor: Mannacabalin-amin ken manangngaasi a Dios, Ama ti Apomi a Jes..."
+480,pagbalinennacami,pagbalinennakami,balin,VERB,make us / cause us to be,Aldaw Ti Iyu-uli: A calpasan ti panagungarna nagparang cadagiti amin a discipulusn...
+481,pagballigiem,pagballigiem,balligi,VERB,cause to succeed / prosper,"Pagballigiem ti naCristianoan a pannacaisursuro dagiti ubbing, dagiti naincalinteg..."
+482,pagdayawan,pagdayawan,dayaw,NOUN,object of praise / worship,"Ken mamatiac iti Espiritu Santo, nga Apo a mangited iti Biag, nga aggapu iti Ama k..."
+483,pagdaydayawanmi,pagdaydayawanmi,dayaw,VERB,we worship / praise,"Ket iti panangipudnomi iti pudpudno laeng a Dios, pagdaydayawanmi ti Trinidad iti ..."
+484,pagilian,pagilian,ili,NOUN,nations / countries,"Amin: Apo palubusamon a sitatalna daytoy adipenmo, Ta nakitanan ti panangisalacanm..."
+485,paglabsingac,paglabsingak,labsing,VERB,I transgress against,"Amin: O Mannacabalin-amin a Dios, manangngaasi nga Ama, siac a nababa a managbasol..."
+486,pagpandayan,pagpandayan,panday,NOUN,legislature / lawmaking body,"Itdem met ti salun-at ken kinarang-ay cadagiti amin nga adda iti turay, nangruna i..."
+487,pagpeggadan,pagpeggadan,peggad,NOUN,dangers / perils,"Ket nupay maicaricami coma iti naincalintegan a pungtotmo ken nawadwad a pannusam,..."
+488,pagrucbaban,pagrukbaban,rukbab,VERB,to bow down before / worship,"Ken mamatiac iti Espiritu Santo, nga Apo a mangited iti Biag, nga aggapu iti Ama k..."
+489,pagrucbabandaca,pagrukbabandaka,rukbab,VERB,we bow down to You,"Dayawendaca, benditoendaca, pagrucbabandaca"
+490,pagsapulan,pagsapulan,sapul,NOUN,livelihood / work,"Pagballigiem ti naCristianoan a pannacaisursuro dagiti ubbing, dagiti naincalinteg..."
+491,pagtaudan,pagtaudan,taud,NOUN,source / origin,"O Dios nga Ama, puon ken pagtaudan dagiti amin a naimbag, Sica a gapu ti naayat ng..."
+492,pagyamanandaca,pagyamanandaka,yaman,VERB,we give thanks to You,"Pastor: Kinapudnona a maicari, maiparbeng, ken nasayaat iti amin a tiempo ken diss..."
+493,pagyamandaca,pagyamandaka,yaman,VERB,we thank You,"Itan-ocdaca, pagyamandaca gaput' gloriam"
+494,pakicacaasimi,pakikakaasimi,asi,NOUN,our plea for mercy,"Agcararag ti Pastor: Mannacabalin-amin ken manangngaasi a Dios, Ama ti Apomi a Jes..."
+495,palubusamon,palubusamon,lubos,VERB,now let depart / release,"Amin: Apo palubusamon a sitatalna daytoy adipenmo, Ta nakitanan ti panangisalacanm..."
+496,pamendicionmo,pamendicionmo,bendicion,NOUN,Your blessing,"Pagballigiem ti naCristianoan a pannacaisursuro dagiti ubbing, dagiti naincalinteg..."
+497,pammacawan,pammakawan,pakawan,NOUN,forgiveness,"Umasidegtayo ita iti napudno a puso, ket ipudnotayo dagiti basbasoltayo ken Apo Di..."
+498,pammacawanmi,pammakawanmi,pakawan,NOUN,our forgiveness,"Ket pacawanennacami cadagiti basbasolmi, a cas met pammacawanmi cadagiti macabasol..."
+499,pammati,pammati,pati,NOUN,faith / belief,"Agcararag ti Pastor: Mannacabalin-amin ken manangngaasi a Dios, Ama ti Apomi a Jes..."
+500,pammautizar,pammautizar,bautizar,NOUN,baptism,"Bigbigec ti maymaysa a pammautizar a pacapacawanan ti basol, ket padaanac ti panag..."
+501,pammendicion,pammendicion,bendicion,NOUN,blessing / benediction,TI PAMMENDICION
+502,panaganusmi,panaganusmi,anus,NOUN,our endurance / patience,"Agcararag ti Pastor: Mannacabalin-amin ken manangngaasi a Dios, Ama ti Apomi a Jes..."
+503,panagayat,panagayat,ayat,NOUN,love / loving,Pascua: Ta iti misterio ti Sao a nagbalin a lasag intedmo cadacami ti baro a panna...
+504,panagbabawida,panagbabawida,babawi,NOUN,their repentance,Adviento: A ti dalanna insagana ni Juan Bautista a nangipacaammo nga Isu ti Mesias...
+505,panagbiag,panagbiag,biag,NOUN,life / living,"Itdem met ti salun-at ken kinarang-ay cadagiti amin nga adda iti turay, nangruna i..."
+506,panagdaydayaw,panagdaydayaw,dayaw,NOUN,worship / praise,URNOS TI PANAGDAYDAYAW (NO ADDA COMULGAR)
+507,panagiwaras,panagiwaras,waras,NOUN,distribution,TI PANAGIWARAS
+508,panagkirang,panagkirang,kirang,NOUN,scarcity / shortage,"Icanawanawancami cadagiti saan a pudno ken macadadael doctrina, cadagiti gubat ken..."
+509,panaglagidingitco,panaglagidingitko,dingit,NOUN,my lamentation / regret,Ngem naimpusoan ti panaglagidingitco gapu cadacuada ken sipapasnec nga ibabawic id...
+510,panaglinnayat,panaglinnayat,ayat,NOUN,mutual love,"Pastor: Itdenmi ti panagyaman Kenca, Mannacabalin-amin a Dios, ta binang-arannacca..."
+511,panagmaymaysa,panagmaymaysa,maysa,NOUN,unity / oneness,"Ket iti panangipudnomi iti pudpudno laeng a Dios, pagdaydayawanmi ti Trinidad iti ..."
+512,panagpapadaada,panagpapadaada,pada,NOUN,their equality,"Ket iti panangipudnomi iti pudpudno laeng a Dios, pagdaydayawanmi ti Trinidad iti ..."
+513,panagtugawna,panagtugawna,tugaw,NOUN,His sitting,Aldaw Ti Pentecostes: Nga immuli iti ngato dagiti langlangit ket iti panagtugawna ...
+514,panagtuoc,panagtuok,tuok,NOUN,suffering / passion,Ngem naimpusoan ti panaglagidingitco gapu cadacuada ken sipapasnec nga ibabawic id...
+515,panagungar,panagungar,ungar,NOUN,resurrection,"Bigbigec ti maymaysa a pammautizar a pacapacawanan ti basol, ket padaanac ti panag..."
+516,panagungarna,panagungarna,ungar,NOUN,His resurrection,Panagungar: Ngem nangruna casapulan a dacami padayawandaca gapu ti nagloriaan a pa...
+517,panagyaman,panagyaman,yaman,NOUN,thanksgiving,"Pastor: Itdenmi ti panagyaman Kenca, Mannacabalin-amin a Dios, ta binang-arannacca..."
+518,panagyamanna,panagyamanna,yaman,NOUN,His giving of thanks,"Pastor: Ni Apo Jesu-Cristo, iti daydi met laeng a rabii a pannacayawatna, nangala ..."
+519,panagyat,panagyat,ayat,NOUN,charity / love,"nga Iglesiasm, agraman cadagiti papastor ken ministrosna, tapno mataginayoncami co..."
+520,panangbalbaliwmo,panangbalbaliwmo,baliw,NOUN,Your changing / transforming,Macaayayo cadi Kenka met ti panangbalbaliwmo cadagiti puspuso dagiti cabusormi ken...
+521,panangipaayna,panangipaayna,paay,NOUN,His granting / provision,"Umasidegtayo ita iti napudno a puso, ket ipudnotayo dagiti basbasoltayo ken Apo Di..."
+522,panangipudnomi,panangipudnomi,pudno,NOUN,our confession / declaring,"Ket iti panangipudnomi iti pudpudno laeng a Dios, pagdaydayawanmi ti Trinidad iti ..."
+523,panangipudnoyo,panangipudnoyo,pudno,NOUN,your confession,"Pastor: Itoy a panangipudnoyo cadagiti basbasolyo, siac, gapu iti saadco a cas naa..."
+524,panangisalacanmo,panangisalakanmo,salakan,NOUN,Your saving / salvation,"Amin: Apo palubusamon a sitatalna daytoy adipenmo, Ta nakitanan ti panangisalacanm..."
+525,panangkitkitam,panangkitkitam,kita,NOUN,Your beholding / looking upon,Pascua: Ta iti misterio ti Sao a nagbalin a lasag intedmo cadacami ti baro a panna...
+526,panangrabi,panangrabi,rabi,NOUN,supper / evening meal,"Pastor: Casta met inalana ti copa idi calpasan ti panangrabi, ket calpasan ti pana..."
+527,panglagipyo,panglagipyo,lagip,NOUN,your remembrance,"Daytoy aramidenyo a panglagipyo Caniac,"
+528,panguloen,panguloen,ulo,NOUN,archangels / leaders,"Ngarud, makiranudcami cadagiti angeles ken panguloen dagiti angeles ken amin a buy..."
+529,pannacaawat,pannakaawat,awat,NOUN,understanding / comprehension,"Calpasan, cuna ti Pastor: ""Ti talna ti Dios a mangdaeg ti amin a pannacaawat, aywa..."
+530,pannacabagi,pannakabagi,bagi,NOUN,representation / representative,"Pastor: Itoy a panangipudnoyo cadagiti basbasolyo, siac, gapu iti saadco a cas naa..."
+531,pannacabalin,pannakabalin,balin,NOUN,power / authority,Panagungar: Ngem nangruna casapulan a dacami padayawandaca gapu ti nagloriaan a pa...
+532,pannacadusa,pannakadusa,dusa,NOUN,punishment / condemnation,"Itdem met ti salun-at ken kinarang-ay cadagiti amin nga adda iti turay, nangruna i..."
+533,pannacaibuyat,pannakaibuyat,buyat,NOUN,shedding / pouring out,"Icanawanawancami cadagiti saan a pudno ken macadadael doctrina, cadagiti gubat ken..."
+534,pannacaipacaammo,pannakaipakaammo,ammo,NOUN,proclamation / making known,"Dagiti amin nga adda iti riribuc ken paricut, dagiti adda iti kinakirang dagiti ma..."
+535,pannacaiparang-arang,pannakaiparang-arang,arang,NOUN,revelation / manifestation,"Agcararag ti Pastor: Mannacabalin-amin ken manangngaasi a Dios, Ama ti Apomi a Jes..."
+536,pannacaisalacan,pannakaisalakan,salakan,NOUN,salvation,"Dinac papanawen dita sangoanam, ket dica iccaten ta Espiritum, Sublim caniac rag-o..."
+537,pannacaisalacantayo,pannakaisalakantayo,salakan,NOUN,our salvation,"Ken mamatiac iti maymaysa nga Apo, Jesu-Cristo, a Bugbugtong nga Anac ti Dios, nga..."
+538,pannacaisursuro,pannakaisursuro,suro,NOUN,teaching / instruction,"Pagballigiem ti naCristianoan a pannacaisursuro dagiti ubbing, dagiti naincalinteg..."
+539,pannacalapped,pannakalapped,lapped,NOUN,restraint / prevention,"Itdem met ti salun-at ken kinarang-ay cadagiti amin nga adda iti turay, nangruna i..."
+540,pannapacawan,pannapakawan,pakawan,NOUN,forgiveness / pardon,"Pastor: Casta met inalana ti copa idi calpasan ti panangrabi, ket calpasan ti pana..."
+541,pannacasulisog,pannakasulisog,sulisog,NOUN,temptation,"Ket dinacam' yeg ti pannacasulisog, no di ket isalacannacami iti dakes;"
+542,pannacataginayon,pannakataginayon,taginayon,NOUN,preservation / maintenance,"Itdem met ti salun-at ken kinarang-ay cadagiti amin nga adda iti turay, nangruna i..."
+543,pannacatay,pannakatay,tay,NOUN,death,Ngem naimpusoan ti panaglagidingitco gapu cadacuada ken sipapasnec nga ibabawic id...
+544,pannacaulila,pannakaulila,ulila,NOUN,bereavement / destitution,"Icanawanawancami cadagiti saan a pudno ken macadadael doctrina, cadagiti gubat ken..."
+545,pannacayawatna,pannacayawatna,yawat,NOUN,His betrayal / handing over,"Pastor: Ni Apo Jesu-Cristo, iti daydi met laeng a rabii a pannacayawatna, nangala ..."
+546,pannusam,pannusam,dusa,NOUN,Your punishment,"Ket nupay maicaricami coma iti naincalintegan a pungtotmo ken nawadwad a pannusam,..."
+547,panunotyo,panunotyo,panunot,NOUN,your minds,"Calpasan, cuna ti Pastor: ""Ti talna ti Dios a mangdaeg ti amin a pannacaawat, aywa..."
+548,papanawen,papanawen,panaw,VERB,cast out / send away,"Dinac papanawen dita sangoanam, ket dica iccaten ta Espiritum, Sublim caniac rag-o..."
+549,papastor,papastor,pastor,NOUN,pastors / shepherds,"nga Iglesiasm, agraman cadagiti papastor ken ministrosna, tapno mataginayoncami co..."
+550,papigsaen,papigsaen,pigsa,VERB,strengthen / to make strong,Papigsaen ken taginayonnennacay coma iti pudno a pammati agingga iti biag nga agna...
+551,papigsaennaccami,papigsaennakami,pigsa,VERB,strengthen us,...papigsaennaccami iti pammati Kenca...
+552,parabur,parabur,parabur,NOUN,grace / blessing / boon,...pagayatam ken paraburmo...
+553,paraburannac,paraburannak,parabur,VERB,grant me grace / bless me,...paraburannac ken caasyannac...
+554,paraburmo,paraburmo,parabur,NOUN,Thy grace / Your blessing,...iti daytoy a paraburmo...
+555,parang-ayem,parang-ayem,rang-ay,VERB,prosper / cause to flourish,Parang-ayem dagiti amin a bungbunga...
+556,paraniagenna,paraniagenna,raniag,VERB,make [His face] shine / cause to illuminate,Ti Apo paraniagenna ti dayagna kenca...
+557,paricut,parikut,parikut,NOUN,distress / difficulty / problem,Dagiti amin nga adda iti riribuc ken paricut...
+558,pascua,paskua,paskua,PROPN,Christmas / Festival of the Nativity,Pascua: Ta iti misterio ti Sao a nagbalin a lasag...
+559,pastor,pastor,pastor,NOUN,Pastor / Minister,Pastor: Ti Apo maadda cadacay ita.
+560,patay,patay,patay,NOUN,death,...naited iti patay gapu cadagiti basbasolyo...
+561,patibkerennac,patibkerennak,tibker,VERB,uphold me / establish me firmly,...patibkerennac ta Espiritum. Amen.
+562,patinayon,patinayon,patinayon,ADV,continually / regularly / always,Aramidenyo daytoy a patinayon...
+563,patinggana,patinggana,patingga,NOUN,its end / limit / cessation,...awanto ti patinggana.
+564,patri,patri,patri,NOUN,Father (in Gloria Patri),GLORIA PATRI
+565,pax,pax,pax,NOUN,Peace (in Pax Domini),TI PAX DOMINI
+566,peggad,peggad,peggad,NOUN,peril / danger,...dagiti adda iti peggad ti ipapatay...
+567,pentecostes,pentekostes,pentekostes,PROPN,Pentecost,Aldaw Ti Pentecostes...
+568,persona,persona,persona,NOUN,Person (of the Trinity),...pagdaydayawanmi ti Trinidad iti Persona...
+569,pilato,pilato,Pilato,PROPN,Pilate,...turay ni Poncio Pilato...
+570,pinacawanmo,pinakawanmo,pakawan,VERB,Thou forgavest / You forgave,Ket pinacawanmo dagiti basbasolco.
+571,pinisina,pinisina,pisi,VERB,He broke [the bread],...pinisina ket intedna cadagiti adalanna...
+572,pinucawna,pinukawna,pukaw,VERB,He destroyed / abolished / put away,...pinucawna ti pannacabalin ni patay...
+573,poncio,poncio,Poncio,PROPN,Pontius,Poncio Pilato
+574,prefacio,prefasio,prefacio,NOUN,Preface (proper liturgical preface),(Isaona ti maitutup a sarita wenno Prefacio)
+575,presidente,presidente,presidente,NOUN,President,...Presidente ken Congreso ti Filipinas...
+576,pudno,pudno,pudno,ADJ,true / faithful / sincere,...iti napudno a puso...
+577,pudpudno,pudpudno,pudno,ADJ,very true / veritable / truly,Pudpudno a Dios ti Pudpudno a Dios...
+578,punganay,punganay,punganay,NOUN,beginning / origin,A cas met idi punganay...
+579,pungtot,pungtot,pungtot,NOUN,wrath / anger / fury,...tapno maliclicanda coma ti pungtot...
+580,pungtotmo,pungtotmo,pungtot,NOUN,Thy wrath / Your anger,...maicaricami coma iti naincalintegan a pungtotmo...
+581,puon,puon,puon,NOUN,source / origin / fountainhead,...puon ken pagtaudan dagiti amin a naimbag...
+582,puso,puso,puso,NOUN,heart,Itdem O Dios ti nadalus a puso...
+583,puspuso,puspuso,puso,NOUN,hearts,...iturayam a canayon dagiti puspuso ken isipmi...
+584,puspusoyo,puspusoyo,puso,NOUN,your hearts,Itangadyot' puspusoyo.
+585,rabii,rabii,rabii,NOUN,night,...iti daydi met laeng a rabii...
+586,rag-o,rag-o,rag-o,NOUN,joy / gladness / delight,...iti aglaplapusanan a rag-o.
+587,rag-ot,rag-ot',rag-o,NOUN,joy of,Sublim caniac rag-ot' pannacaisalacan...
+588,rebbengco,rebbengko,rebbeng,VERB,I ought / my desert / I deserve,...ket rebbengco ti agsagaba iti dusa...
+589,republica,republika,republika,NOUN,Republic,...ti daytoy a Republica...
+590,rigrigat,rigrigat,rigat,NOUN,hardships / tribulations / sufferings,...wenno aniaman a rigrigat...
+591,riribuc,riribuk,ribuk,NOUN,turmoil / trouble / disturbance,Ket iti tiempo ti riribuc...
+592,rumbeng,rumbeng,rumbeng,ADJ,right / fitting / proper,Isut' rumbeng nga aramid.
+593,rupana,rupana,rupa,NOUN,His countenance / His face,Ti Apo itannawagna kenca ti rupana...
+594,saadco,saadko,saad,NOUN,my office / my station,...gapu iti saadco a cas naayaban...
+595,saan,saan,saan,PART,not / no,...makita ken saan a makita.
+596,sabsabali,sabsabali,sabali,ADJ,other / varied / diverse,Dagitoy ken aniaman a sabsabali a banbanag...
+597,sacramento,sakramento,sakramento,NOUN,Sacrament,...itoy a Sacramento...
+598,sadi,sadi,sadi,ADP,in / at (distant/heavenly location),Amami nga addaca sadi langit...
+599,sagsagut,sagsagut,sagut,NOUN,gifts / offerings,...agraman dagiti sagsagut nga iyegmi...
+600,sagut,sagut,sagut,NOUN,gift / bounty,...nangruna iti sagut ti dungdunggoem nga Anac...
+601,salacnibannacami,salaknibannakami,salaknib,VERB,protect us / defend us,...salacnibannacami cadagiti amin a pacadangran...
+602,salimetmetanmi,salimetmetanmi,salimetmet,VERB,we preserve / keep / hold fast,...salimetmetanmi coma ket iyegmi ti bunga...
+603,salimetmetannaca,salimetmetannaka,salimetmet,VERB,keep thee / preserve you,Ti Apo bendicionannaca ken salimetmetannaca!
+604,salun-at,salun-at,salun-at,NOUN,health / wellbeing,Itdem met ti salun-at ken kinarang-ay...
+605,sangalubongan,sangalubongan,lubong,ADJ,universal / worldwide / ecumenical,...ti Sangalubongan nga Iglesia...
+606,sangoanam,sangoanam,sango,NOUN,Thy presence / before Thee,Dinac papanawen dita sangoanam...
+607,sangsangcamaysa,sangsangkamaysa,maysa,ADV,together as one / unitedly,...pagdayawan ida a sangsangcamaysa...
+608,sanguanam,sangoanam,sango,NOUN,Thy presence / before Thee,...sagsagut nga iyegmi iti sanguanam...
+609,santo,santo,santo,ADJ,Holy / Saint,"Espiritu Santo / Santo, Santo, Santo"
+610,sao,sao,sao,NOUN,word / Word of God,...adipen ti Sao / Sao a nagbalin a lasag...
+611,saoen,saoen,sao,VERB,to say / recite / speak,...saoen wenno icanta toda...
+612,saoenna,saoenna,sao,VERB,he says / recites,Ti Pastor saoenna ti Introita...
+613,saom,saom,sao,NOUN,Thy Word / Your Word,...doctrina ti Saom...
+614,sarita,sarita,sarita,NOUN,address / words / proper preface,(Isaona ti maitutup a sarita wenno Prefacio)
+615,satanas,satanas,Satanas,PROPN,Satan / the Adversary,...ni Satanas a nangparmec ken ni Adan...
+616,sermon,sermon,sermon,NOUN,Sermon / Homily,TI SERMON
+617,siac,siak,siak,PRON,I / me,...siac a nababa a managbasol...
+618,sibubukel,sibubukel,bukel,ADJ,whole / entire,...agragsac ti sibubukel a daga...
+619,sica,sika,sika,PRON,Thou / You,Ta Sica la ti Santo...
+620,sicsica,siksika,sika,PRON,Thou alone / You alone,"Sicsica, Cristo, ken ti Espiritu Santo..."
+621,silaw,silaw,silaw,NOUN,light,Silaw ti Silaw / Silaw a mangsilnag...
+622,simamael,simamael,simamael,ADV,faithfully / diligently / steadfastly,...simamael nga inturayan ken sinalacnibam...
+623,sinalacnibam,sinalaknibam,salaknib,VERB,Thou protectedst / You defended,...sinalacnibam ti nasantoan nga Iglesiasm...
+624,sipapasnec,sipapasnek,pasnek,ADV,earnestly / sincerely / contritely,...sipapasnec nga ibabawic ida...
+625,siraraay,siraraay,raay,ADV,in glorious multitude / in majesty,...umayto manen a siraraay a mangmocom...
+626,sirarag-o,sirarag-o,rag-o,ADV,joyfully / with gladness,...nanamenmi ida a sirarag-o...
+627,sisasagana,sisasagana,sagana,ADJ,ever-ready / prepared,...sisasagana a tulong...
+628,sitatalna,sitatalna,talna,ADV,in peace / peacefully,Incayo a sitatalna. / Apo palubusamon a sitatalna...
+629,situtugaw,situtugaw,tugaw,ADJ,seated / sitting,...situtugaw iti macanawan ti Ama...
+630,sublim,sublim,subli,VERB,restore Thou / return unto,Sublim caniac rag-ot' pannacaisalacan...
+631,sumardeng,sumardeng,sardeng,VERB,to cease / stop / desist,...tapno sumardeng coma ti gurada...
+632,surat,surat,surat,NOUN,Scripture / Epistle reading,...Nasantoan a Surat / basaen ti Pastor ti napili a SURAT...
+633,sursuro,sursuro,suro,NOUN,teaching / instruction / doctrine,...macapagpaay a sursuro...
+634,ta,ta,ta,SCONJ,for / because,Ta Sica la ti Santo...
+635,taaw,taaw,taaw,NOUN,sea / ocean,...daga ken taaw...
+636,taginayonnennacay,taginayonnennakayo,taginayon,VERB,preserve you / keep you,Papigsaen ken taginayonnennacay coma...
+637,tallo,tallo,tallo,NUM,three,Aldaw Dagiti Tallo Nga Ari
+638,talna,talna,talna,NOUN,peace / tranquility,...iccannaca iti talna!
+639,talna't,talna't,talna,NOUN,peace to / peace on,"Talna't daga, naimbag a nakem!"
+640,talnam,talnam,talna,NOUN,Thy peace / Your peace,Itdem talnam. Amen.
+641,tan-oc,tan-ok,tan-ok,NOUN,majesty / glory / exaltation,Tan-oc Kenca O Apo!
+642,tao,tao,tao,NOUN,man / human / person,...gapu amin a tao...
+643,tapno,tapno,tapno,SCONJ,so that / in order that,...tapno agbiagcami a maipaay Kenca.
+644,taraonmi,taraonmi,taraon,NOUN,our daily bread / our food,Itdem cadacam' ita ti taraonmi iti inaldaw.
+645,tattao,tattao,tao,NOUN,people / humans / mankind,...gapu cadatayo a tattao...
+646,tayo,tayo,tayo,PRON,our / we (inclusive),...Mangisalacan tayo a Jesu-Cristo...
+647,ti,ti,ti,DET,the / of,...ti nagan ti Ama...
+648,tiempo,tiempo,tiempo,NOUN,timing,...iti tiempo ti riribuc...
+649,tinapay,tinapay,tinapay,NOUN,bread,...nangala iti tinapay...
+650,toda,toda,toda,PRON,this / these,...saoen wenno icanta toda...
+651,toy,toy,daytoy,DET,this (proximal),...toy Espirituk.
+652,trinidad,trinidad,trinidad,PROPN,Trinity / Holy Trinity,"Trinidad: Ket Sica, agraman ti Bugbugtong..."
+653,tulag,tulag,tulag,NOUN,covenant / testament,...ti baro a tulag iti darac...
+654,tulong,tulong,tulong,NOUN,help / assistance,Ti tulong nga agpaay cadatayo adda iti nagan ti Apo.
+655,tulongam,tulongam,tulong,VERB,help Thou / assist,...ket tulongam dagiti inbaonmo...
+656,tumacder,tumakder,takder,VERB,to stand / stands (liturgical action),Tumacder ti gimong.
+657,tunggal,tunggal,tunggal,DET,each / every,...iti tunggal maysa...
+658,tuocda,tuokda,tuok,NOUN,their afflictions / their sufferings,...awaten ken bigbigenda coma dagiti tuocda...
+659,turay,turay,turay,NOUN,authority / rule / government,...dagiti amin nga adda iti turay...
+660,ubbing,ubbing,ubing,NOUN,children / young people,...pannacaisursuro dagiti ubbing...
+661,ucom,ukom,ukom,NOUN,judge / magistrate,...dagiti amin nga Ucom ken Magistradosmi...
+662,umadu,umadu,adu,VERB,to increase / multiply / abound,...panagyat cadagiti amin a tattao umadu coma cadacami...
+663,umasidegtayo,umasidegtayo,asideg,VERB,let us draw near / let us approach,Umasidegtayo ita iti napudno a puso...
+664,umay,umay,umay,VERB,to come / comes,Umay coma ti pagariam.
+665,umayto,umayto,umay,VERB,shall come / will come,...ket umayto manen a siraraay a mangmocom...
+666,uminomcayo,uminomkayo,inom,VERB,drink ye / drink all of you,Uminomcayo amin iti daytoy...
+667,unay,unay,unay,ADV,very / greatly / exceedingly,...dagiti adu unay a lablabsingmi...
+668,urnos,urnos,urnos,NOUN,order / liturgy / arrangement,URNOS TI PANAGDAYDAYAW
+669,versiculo,versikulo,versikulo,NOUN,verse (biblical verse),...capitulo ken versiculo ti EVANGELIO...
+670,wenno,wenno,wenno,CCONJ,or,...saoen wenno icanta...
+671,yaman,yaman,yaman,NOUN,thanks / gratitude,Yaman ken Dios.
+672,yeg,yeg,yeg,VERB,bring / lead,Ket dinacam' yeg ti pannacasulisog...

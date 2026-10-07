@@ -14,10 +14,11 @@
 | English_Translation | str | English gloss / translation |
 | Context_Example | str | Usage example from the corpus with page reference |
 
-## Notes
-- Three CSV files cover rows 1-110, 441-550, and 550-672
-- Gap: rows 111-440 are not yet annotated
-- Row 550 (papigsaen) appears in both the 441-550 and 550-672 files
-- The 441-550 file has a filename typo: 'AnnonatedLexicon' (missing 't')
+## Current Inventory & Coverage
+- Source files detected: `AnnotatedIlocanoLexicon.csv`
+- Total headwords loaded: 670
+- Unique words coverage: 669/672 (99.6%)
+- Uncovered word ranges: `['221', '229', '540']`
+- Duplicate headwords across files: 0
 - All files use the same column schema
 - POS tags follow Universal Dependencies (UPOS) conventions

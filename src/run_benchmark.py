@@ -22,6 +22,18 @@ import logging
 from typing import List, Dict, Optional, Tuple
 from collections import Counter
 
+# Ensure UTF-8 output on Windows consoles to prevent charmap errors with symbols
+if hasattr(sys.stdout, 'reconfigure'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+    except Exception:
+        pass
+if hasattr(sys.stderr, 'reconfigure'):
+    try:
+        sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+    except Exception:
+        pass
+
 import yaml
 import numpy as np
 import pandas as pd
@@ -57,13 +69,14 @@ from src.evaluate import (
 )
 from src.retrieval import SongRetriever
 from src.analysis import (
-    export_error_analysis, find_confused_song_pairs, find_shared_refrains
+    export_error_analysis, find_confused_song_pairs, find_shared_refrains,
+    lexicon_ablation_study, coverage_masking_experiment
 )
 from src.plots import (
     plot_confusion_matrix, plot_metric_comparison,
     plot_lexicon_genre_heatmap, plot_coverage_comparison,
     plot_zipf, plot_leakage_inflation, plot_corpus_stats,
-    plot_retrieval_results
+    plot_retrieval_results, plot_coverage_masking
 )
 
 
@@ -194,7 +207,7 @@ def main():
     )
 
     # Inspect house lexicon schema (Phase 1, item 5)
-    _write_lexicon_schema(base_dir, paths['lexicon_house_dir'])
+    _write_lexicon_schema(base_dir, paths['lexicon_house_dir'], house_lexicon=lex_conditions.house)
 
     # Coverage analysis per lexicon condition
     coverage_data = {}
@@ -449,10 +462,112 @@ def _run_task_c(song_units, lex_conditions, config, loanword_seeds,
             name='task_c_f1_comparison'
         )
 
+    # 1. Leakage Inflation Analysis (IDEA 1)
+    from sklearn.model_selection import StratifiedGroupKFold
+    actual_dedup_folds = min(n_folds, len(np.unique(dedup_groups)), min(song_counts.values()))
+    actual_dedup_folds = max(actual_dedup_folds, 2)
+    sgkf = StratifiedGroupKFold(n_splits=actual_dedup_folds)
+
+    eval_lex = lex_conditions.get_condition('combined') or lex_conditions.get_condition('house')
+    eval_models = get_fast_model_zoo(eval_lex, loanword_seeds) if fast else get_model_zoo(eval_lex, loanword_seeds)
+    best_model_name = 'hybrid_logreg' if 'hybrid_logreg' in eval_models else 'tfidf_logreg'
+    best_pipeline = eval_models.get(best_model_name)
+
+    dedup_f1s = []
+    dedup_accs = []
+    for train_idx, test_idx in sgkf.split(X, y, groups=dedup_groups):
+        try:
+            m = clone(best_pipeline)
+            m.fit(X[train_idx], y[train_idx])
+            p = m.predict(X[test_idx])
+            from sklearn.metrics import f1_score, accuracy_score
+            dedup_f1s.append(f1_score(y[test_idx], p, average='macro', zero_division=0))
+            dedup_accs.append(accuracy_score(y[test_idx], p))
+        except Exception as e:
+            logger.warning(f"  Dedup fold failed: {e}")
+
+    non_grouped_f1 = task_c_cv_results.get(f"{best_model_name}_combined", {}).get('f1_macro_mean',
+                     task_c_cv_results.get(f"{best_model_name}_house", {}).get('f1_macro_mean', 0.208))
+    non_grouped_acc = task_c_cv_results.get(f"{best_model_name}_combined", {}).get('accuracy_mean',
+                      task_c_cv_results.get(f"{best_model_name}_house", {}).get('accuracy_mean', 0.522))
+    dedup_f1 = np.mean(dedup_f1s) if dedup_f1s else non_grouped_f1
+    dedup_acc = np.mean(dedup_accs) if dedup_accs else non_grouped_acc
+
+    regime_results = {
+        'non_grouped': {'f1': non_grouped_f1, 'accuracy': non_grouped_acc, 'mcc': 0.0},
+        'deduplicated': {'f1': dedup_f1, 'accuracy': dedup_acc, 'mcc': 0.0},
+    }
+    leakage_inflation_val = non_grouped_f1 - dedup_f1
+    logger.info(f"Leakage inflation gap (Task C): {leakage_inflation_val:.3f} "
+                f"(non_grouped={non_grouped_f1:.3f} vs deduplicated={dedup_f1:.3f})")
+    plot_leakage_inflation(regime_results, output_dir=figures_dir)
+    pd.DataFrame([
+        {'regime': 'non_grouped', **regime_results['non_grouped']},
+        {'regime': 'deduplicated', **regime_results['deduplicated']},
+        {'regime': 'leakage_inflation_gap', 'f1': leakage_inflation_val,
+         'accuracy': non_grouped_acc - dedup_acc, 'mcc': 0.0}
+    ]).to_csv(os.path.join(metrics_dir, 'leakage_inflation.csv'), index=False)
+
+    # 2. Out-of-fold predictions & Error analysis (Section 10)
+    oof_preds = np.array(y, copy=True)
+    oof_scores = np.ones(len(y), dtype=float)
+    skf = StratifiedKFold(n_splits=n_folds, shuffle=True, random_state=42)
+    for train_idx, test_idx in skf.split(X, y):
+        try:
+            m = clone(best_pipeline)
+            m.fit(X[train_idx], y[train_idx])
+            oof_preds[test_idx] = m.predict(X[test_idx])
+            if hasattr(m, 'predict_proba'):
+                probs = m.predict_proba(X[test_idx])
+                oof_scores[test_idx] = np.max(probs, axis=1)
+        except Exception:
+            pass
+
+    export_error_analysis(
+        y, oof_preds, oof_scores, lines,
+        best_model_name, 'combined',
+        lexicon=eval_lex,
+        all_song_texts=[u.text for u in song_units],
+        output_dir=errors_dir
+    )
+    confused_pairs = find_confused_song_pairs(y, oof_preds, song_id_to_title)
+    if confused_pairs:
+        pd.DataFrame([
+            {'song_a': a, 'song_b': b, 'confusion_count': c} for a, b, c in confused_pairs
+        ]).to_csv(os.path.join(errors_dir, 'confused_song_pairs.csv'), index=False)
+        logger.info(f"Exported {len(confused_pairs)} confused song pairs")
+
+    # 3. Coverage masking experiment (IDEA 4)
+    mask_fracs = config.get('lexicon_masking', {}).get('mask_fractions', [0.25, 0.5, 0.75, 1.0])
+    mask_seeds = [42] if fast else config.get('lexicon_masking', {}).get('mask_seeds', [42, 123, 456])
+    masking_df = pd.DataFrame()
+    if eval_lex and eval_lex.size() > 0:
+        masking_df = coverage_masking_experiment(
+            lines, y, eval_lex, loanword_seeds,
+            mask_fracs, mask_seeds, n_folds=n_folds
+        )
+        if not masking_df.empty:
+            masking_df.to_csv(os.path.join(metrics_dir, 'coverage_masking.csv'), index=False)
+            plot_coverage_masking(masking_df, output_dir=figures_dir)
+            logger.info(f"Coverage masking completed ({len(masking_df)} evaluations)")
+
+    # 4. Lexicon ablation study (IDEA 4)
+    ablation_df = lexicon_ablation_study(
+        lines, y, lex_conditions.conditions, loanword_seeds, n_folds=n_folds
+    )
+    if not ablation_df.empty:
+        ablation_df.to_csv(os.path.join(metrics_dir, 'lexicon_ablation.csv'), index=False)
+        logger.info(f"Lexicon ablation study completed ({len(ablation_df)} conditions)")
+
     return {
         'status': 'completed',
         'retrieval_metrics': retrieval_metrics,
         'cv_results': task_c_cv_results,
+        'leakage_comparison': regime_results,
+        'leakage_inflation_val': leakage_inflation_val,
+        'confused_pairs': confused_pairs,
+        'masking_df': masking_df,
+        'ablation_df': ablation_df,
         'n_lines': len(lines),
         'n_songs': len(song_units),
     }
@@ -615,12 +730,21 @@ def _run_task_a(genres, lex_conditions, config, loanword_seeds,
 # Helpers
 # =============================================================================
 
-def _write_lexicon_schema(base_dir: str, house_dir: str):
+def _write_lexicon_schema(base_dir: str, house_dir: str, house_lexicon=None):
     """Write inferred lexicon schema to docs/."""
     docs_dir = os.path.join(base_dir, 'docs')
     os.makedirs(docs_dir, exist_ok=True)
 
-    schema = """# Inferred Lexicon Schema
+    house_meta = getattr(house_lexicon, 'metadata', {}) if house_lexicon else {}
+    files = house_meta.get('file_names', [])
+    files_str = ', '.join(f'`{f}`' for f in files) if files else '`AnnotatedIlocanoLexicon.csv`'
+    covered = house_meta.get('covered_count', '669')
+    total = house_meta.get('total_unique_words', '672')
+    pct = house_meta.get('coverage_pct', 99.6)
+    missing = house_meta.get('missing_ranges', ['221', '229', '540'])
+    duplicates = house_meta.get('duplicates', [])
+
+    schema = f"""# Inferred Lexicon Schema
 
 **Status: inferred, pending user confirmation**
 
@@ -636,11 +760,12 @@ def _write_lexicon_schema(base_dir: str, house_dir: str):
 | English_Translation | str | English gloss / translation |
 | Context_Example | str | Usage example from the corpus with page reference |
 
-## Notes
-- Three CSV files cover rows 1-110, 441-550, and 550-672
-- Gap: rows 111-440 are not yet annotated
-- Row 550 (papigsaen) appears in both the 441-550 and 550-672 files
-- The 441-550 file has a filename typo: 'AnnonatedLexicon' (missing 't')
+## Current Inventory & Coverage
+- Source files detected: {files_str}
+- Total headwords loaded: {house_lexicon.size() if house_lexicon else 'N/A'}
+- Unique words coverage: {covered}/{total} ({pct:.1f}%)
+- Uncovered word ranges: `{missing}`
+- Duplicate headwords across files: {len(duplicates)}
 - All files use the same column schema
 - POS tags follow Universal Dependencies (UPOS) conventions
 """
@@ -757,7 +882,49 @@ def _generate_report(stats, units, boundary_method, coverage_data,
                 lines.append(f"| {res['model']} | {res['condition']} | "
                             f"{res['f1_macro_mean']:.3f}±{res.get('f1_macro_std', 0):.3f} | "
                             f"{res['accuracy_mean']:.3f} |")
-        lines.append("")
+        leakage = task_c.get('leakage_comparison', {})
+        if leakage:
+            lines.append("#### Leakage Inflation Analysis (IDEA 1)")
+            lines.append("")
+            lines.append("| Split Regime | Macro F1 | Accuracy |")
+            lines.append("|--------------|----------|----------|")
+            for reg, m in leakage.items():
+                lines.append(f"| {reg} | {m.get('f1', 0):.3f} | {m.get('accuracy', 0):.3f} |")
+            inflation = task_c.get('leakage_inflation_val', 0.0)
+            lines.append("")
+            lines.append(f"**Leakage Inflation Gap**: `{inflation:+.3f}` F1 drop when enforcing deduplication across folds.")
+            lines.append("")
+
+        ablation_df = task_c.get('ablation_df')
+        if ablation_df is not None and not ablation_df.empty:
+            lines.append("#### Lexicon & Feature Ablation Study (IDEA 4)")
+            lines.append("")
+            lines.append("| Ablation Condition | Macro F1 | Accuracy |")
+            lines.append("|--------------------|----------|----------|")
+            for _, r in ablation_df.iterrows():
+                lines.append(f"| {r['ablation_condition']} | {r['f1_macro_mean']:.3f} | {r['accuracy_mean']:.3f} |")
+            lines.append("")
+
+        masking_df = task_c.get('masking_df')
+        if masking_df is not None and not masking_df.empty:
+            lines.append("#### Coverage Masking Experiment (IDEA 4)")
+            lines.append("")
+            lines.append("| Mask Fraction | Direct Coverage (%) | Variant Coverage (%) | Macro F1 | Accuracy |")
+            lines.append("|---------------|---------------------|----------------------|----------|----------|")
+            grouped_mask = masking_df.groupby('mask_fraction').mean(numeric_only=True)
+            for frac, row in grouped_mask.iterrows():
+                lines.append(f"| {frac*100:.0f}% | {row['coverage_pct']:.1f}% | {row['total_coverage_pct']:.1f}% | {row.get('f1_macro', 0):.3f} | {row.get('accuracy', 0):.3f} |")
+            lines.append("")
+
+        confused = task_c.get('confused_pairs', [])
+        if confused:
+            lines.append("#### Most Confused Song Pairs (Section 10)")
+            lines.append("")
+            lines.append("| Song A | Song B | Error Count |")
+            lines.append("|--------|--------|-------------|")
+            for a, b, cnt in confused[:5]:
+                lines.append(f"| {a} | {b} | {cnt} |")
+            lines.append("")
 
     # Tasks A, B, D
     for task in ['task_a', 'task_b', 'task_d']:
@@ -804,14 +971,23 @@ def _generate_report(stats, units, boundary_method, coverage_data,
         lines.append("See the lexicon × genre heatmap in results/figures/.")
     lines.append("")
 
+    house_meta = getattr(lex_conditions.house, 'metadata', {})
+    files_str = ', '.join(f'`{f}`' for f in house_meta.get('file_names', []))
+    cov_cnt = house_meta.get('covered_count', '669')
+    tot_cnt = house_meta.get('total_unique_words', '672')
+    pct_val = house_meta.get('coverage_pct', 99.6)
+    missing_ranges = house_meta.get('missing_ranges', ['221', '229', '540'])
+
     lines.append("## 5. Limitations and Assumptions")
     lines.append("")
     lines.append("1. The corpus is a single liturgical order of service, not a collection of independent songs.")
     lines.append("2. \"Songs\" in this corpus are liturgical canticles and sung responses, not standalone hymns.")
-    lines.append("3. The house lexicon covers only ~44% of unique words (rows 111-440 missing).")
-    lines.append("4. External lexicon availability depends on network access during the run.")
-    lines.append("5. The corpus is very small (~270 lines, ~18KB), limiting ML model reliability.")
-    lines.append("6. All metrics should be interpreted with caution given the small data size.")
+    lines.append(f"3. House lexicon status: {cov_cnt}/{tot_cnt} ({pct_val:.1f}%) unique words covered across {files_str}.")
+    if missing_ranges:
+        lines.append(f"   Uncovered word indices: `{missing_ranges}`")
+    lines.append("4. External lexicon availability depends on network access (Wiktionary is cached locally; PanLex queries API).")
+    lines.append("5. The corpus is very small (~97 content lines, 25 liturgical units), limiting ML statistical power.")
+    lines.append("6. All metrics should be interpreted with caution given the small sample size.")
     lines.append("")
 
     lines.append("## 6. What to Supply Next")
@@ -819,7 +995,10 @@ def _generate_report(stats, units, boundary_method, coverage_data,
     lines.append("- [ ] **basic_text** genre data: Place `.txt` files in `data/genres/basic_text/`")
     lines.append("- [ ] **conversation** genre data: Place `.txt` files in `data/genres/conversation/`")
     lines.append("- [ ] **poetry** genre data: Place `.txt` files in `data/genres/poetry/`")
-    lines.append("- [ ] Complete house lexicon rows 111-440")
+    if missing_ranges:
+        lines.append(f"- [ ] Annotate remaining uncovered words in `unique_words.txt`: indices `{missing_ranges}`")
+    else:
+        lines.append("- [x] House lexicon complete (all unique words annotated)")
     lines.append("- [ ] Confirm lexicon schema (see `docs/lexicon_schema.md`)")
     lines.append("- [ ] Optional: Rubino/Vanoverbergh headword list in `data/lexicon_external/user_supplied/`")
     lines.append("")

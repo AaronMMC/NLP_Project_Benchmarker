@@ -286,3 +286,40 @@ def plot_retrieval_results(retrieval_metrics: Dict[str, float],
                f'{val:.3f}', ha='center', va='bottom', fontsize=10)
 
     _save_fig(fig, name, output_dir)
+
+
+def plot_coverage_masking(masking_df: pd.DataFrame,
+                          output_dir: str = 'results/figures',
+                          name: str = 'coverage_masking_curve'):
+    """Plot performance / coverage vs available lexicon coverage."""
+    if masking_df.empty:
+        return
+
+    fig, ax1 = plt.subplots(figsize=(9, 5))
+
+    grouped = masking_df.groupby('mask_fraction')
+    fractions = sorted(masking_df['mask_fraction'].unique())
+
+    cov_means = [grouped.get_group(f)['coverage_pct'].mean() for f in fractions]
+    cov_stds = [grouped.get_group(f)['coverage_pct'].std() if len(grouped.get_group(f)) > 1 else 0 for f in fractions]
+
+    color = '#2196F3'
+    ax1.set_xlabel('Mask Fraction (fraction of headwords removed)')
+    ax1.set_ylabel('Lexicon Coverage (%)', color=color)
+    ax1.errorbar(fractions, cov_means, yerr=cov_stds, fmt='-o', color=color, capsize=4, label='Lexicon Coverage')
+    ax1.tick_params(axis='y', labelcolor=color)
+    ax1.grid(True, alpha=0.3)
+
+    if 'f1_macro' in masking_df.columns:
+        ax2 = ax1.twinx()
+        color2 = '#E91E63'
+        f1_means = [grouped.get_group(f)['f1_macro'].mean() for f in fractions]
+        f1_stds = [grouped.get_group(f)['f1_macro'].std() if len(grouped.get_group(f)) > 1 else 0 for f in fractions]
+        ax2.set_ylabel('Task C Macro F1', color=color2)
+        ax2.errorbar(fractions, f1_means, yerr=f1_stds, fmt='--s', color=color2, capsize=4, label='Task C F1')
+        ax2.tick_params(axis='y', labelcolor=color2)
+
+    plt.title('Lexicon Coverage Masking: Performance vs Mask Fraction')
+    fig.tight_layout()
+    _save_fig(fig, name, output_dir)
+

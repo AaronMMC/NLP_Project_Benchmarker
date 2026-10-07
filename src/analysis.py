@@ -184,110 +184,174 @@ def export_error_analysis(y_true: np.ndarray, y_pred: np.ndarray,
     return df
 
 
-def lexicon_ablation_study(base_model, X_train, y_train, X_test, y_test,
-                           lexicon_conditions: Dict[str, Optional[Lexicon]],
-                           loanword_seeds: List[str]) -> pd.DataFrame:
+def lexicon_ablation_study(texts: List[str], y: np.ndarray,
+                            lexicon_conditions: Dict[str, Optional[Lexicon]],
+                            loanword_seeds: List[str],
+                            n_folds: int = 3) -> pd.DataFrame:
     """
-    Drop each lexicon condition's features and measure performance drop.
+    Drop each lexicon condition and feature group to measure marginal contribution.
 
-    For each lexicon condition, retrain the model without that condition's
-    features and report the metric difference.
+    Evaluates:
+    - full_combined (TF-IDF + combined lexicon + loanwords + text stats)
+    - without_house (TF-IDF + existing lexicon only)
+    - without_existing (TF-IDF + house lexicon only)
+    - without_lexicon (TF-IDF + loanwords + text stats, no lexicon)
+    - without_loanwords (combined model without loanword features)
+    - without_text_stats (combined model without text length stats)
+    - lexicon_only (combined lexicon + loanwords + text stats, no TF-IDF)
 
     Returns DataFrame with ablation results.
     """
-    from src.models import get_model_zoo
+    from sklearn.model_selection import StratifiedKFold
+    from sklearn.metrics import f1_score, accuracy_score
+    from src.features import build_feature_pipeline
+    from sklearn.preprocessing import MaxAbsScaler
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.pipeline import Pipeline
+
+    X = np.array(texts)
+    y_arr = np.array(y)
+    unique_classes, counts = np.unique(y_arr, return_counts=True)
+    actual_folds = min(n_folds, min(counts))
+    actual_folds = max(actual_folds, 2)
+
+    configs = [
+        ('full_combined', lexicon_conditions.get('combined'), True, True, True),
+        ('without_house', lexicon_conditions.get('existing'), True, True, True),
+        ('without_existing', lexicon_conditions.get('house'), True, True, True),
+        ('without_lexicon', None, True, True, True),
+        ('without_loanwords', lexicon_conditions.get('combined'), True, False, True),
+        ('without_text_stats', lexicon_conditions.get('combined'), True, True, False),
+        ('lexicon_only', lexicon_conditions.get('combined'), False, True, True),
+    ]
+
     results = []
+    skf = StratifiedKFold(n_splits=actual_folds, shuffle=True, random_state=42)
 
-    # Baseline: full model with all features
-    baseline_models = get_model_zoo(lexicon_conditions.get('combined'), loanword_seeds)
-    if 'hybrid_logreg' in baseline_models:
-        base = baseline_models['hybrid_logreg']
-    else:
-        base = baseline_models.get('tfidf_logreg')
-
-    if base is None:
-        logger.warning("No suitable model for ablation study")
-        return pd.DataFrame()
-
-    try:
-        base_clone = clone(base)
-        base_clone.fit(X_train, y_train)
-        base_pred = base_clone.predict(X_test)
-        base_metrics = compute_binary_metrics(y_test, base_pred)
-        results.append({
-            'condition': 'full',
-            'f1': base_metrics.get('f1', 0),
-            'mcc': base_metrics.get('mcc', 0),
-            'accuracy': base_metrics.get('accuracy', 0),
-        })
-    except Exception as e:
-        logger.warning(f"Ablation baseline failed: {e}")
-        return pd.DataFrame()
-
-    # Ablate each condition
-    for cond_name, lex in lexicon_conditions.items():
-        if cond_name == 'none':
-            continue
+    for name, lex, use_tfidf, use_loan, use_stats in configs:
+        fold_f1s = []
+        fold_accs = []
         try:
-            ablated_models = get_model_zoo(None, loanword_seeds)  # No lexicon
-            model = ablated_models.get('tfidf_logreg')
-            if model:
-                model_clone = clone(model)
-                model_clone.fit(X_train, y_train)
-                pred = model_clone.predict(X_test)
-                metrics = compute_binary_metrics(y_test, pred)
-                results.append({
-                    'condition': f'without_{cond_name}',
-                    'f1': metrics.get('f1', 0),
-                    'mcc': metrics.get('mcc', 0),
-                    'accuracy': metrics.get('accuracy', 0),
-                })
+            for train_idx, test_idx in skf.split(X, y_arr):
+                pipe = Pipeline([
+                    ('features', build_feature_pipeline(
+                        lexicon_condition=lex,
+                        loanword_seeds=loanword_seeds,
+                        use_tfidf_word=use_tfidf,
+                        use_tfidf_char=use_tfidf,
+                        use_lexicon=(lex is not None),
+                        use_loanword=use_loan,
+                        use_text_stats=use_stats,
+                    )),
+                    ('scaler', MaxAbsScaler()),
+                    ('clf', LogisticRegression(max_iter=1000, random_state=42, C=1.0))
+                ])
+                pipe.fit(X[train_idx], y_arr[train_idx])
+                pred = pipe.predict(X[test_idx])
+                fold_f1s.append(f1_score(y_arr[test_idx], pred, average='macro', zero_division=0))
+                fold_accs.append(accuracy_score(y_arr[test_idx], pred))
+
+            results.append({
+                'ablation_condition': name,
+                'f1_macro_mean': np.mean(fold_f1s),
+                'f1_macro_std': np.std(fold_f1s),
+                'accuracy_mean': np.mean(fold_accs),
+                'accuracy_std': np.std(fold_accs),
+            })
+            logger.info(f"  Ablation [{name}]: F1={np.mean(fold_f1s):.3f}, acc={np.mean(fold_accs):.3f}")
         except Exception as e:
-            logger.warning(f"Ablation for {cond_name} failed: {e}")
+            logger.warning(f"  Ablation [{name}] failed: {e}")
 
     return pd.DataFrame(results)
 
 
-def coverage_masking_experiment(retriever, test_lines: List[str],
-                                test_song_ids: List[int],
+def coverage_masking_experiment(texts: List[str], y: np.ndarray,
                                 lexicon: Lexicon,
+                                loanword_seeds: List[str],
                                 mask_fractions: List[float],
                                 mask_seeds: List[int],
-                                top_k_values: List[int] = [1, 3, 5]) -> pd.DataFrame:
+                                n_folds: int = 3) -> pd.DataFrame:
     """
-    Randomly mask lexicon entries and measure retrieval performance.
+    Randomly mask lexicon entries and measure downstream performance.
 
-    Masks a fraction of lexicon entries over several seeds and
-    evaluates performance at each masking level.
+    Masks a fraction of lexicon headwords (e.g. 25%, 50%, 75%, 100%)
+    over several seeds, measuring both lexicon coverage and model F1.
 
-    Returns DataFrame with mask_fraction, seed, and metrics.
+    Returns DataFrame with mask_fraction, seed, coverage_pct, and metrics.
     """
-    results = []
+    from sklearn.model_selection import StratifiedKFold
+    from sklearn.metrics import f1_score, accuracy_score
+    from src.features import build_feature_pipeline
+    from sklearn.preprocessing import MaxAbsScaler
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.pipeline import Pipeline
 
-    # Unmasked baseline
-    baseline = retriever.evaluate(test_lines, test_song_ids, top_k_values)
-    results.append({
-        'mask_fraction': 0.0,
-        'seed': 0,
-        **baseline
-    })
+    X = np.array(texts)
+    y_arr = np.array(y)
+    unique_classes, counts = np.unique(y_arr, return_counts=True)
+    actual_folds = min(n_folds, min(counts))
+    actual_folds = max(actual_folds, 2)
+
+    all_tokens = []
+    for t in texts:
+        all_tokens.extend(tokenise(t))
 
     headwords = list(lexicon.headwords)
-    for frac in mask_fractions:
-        for seed in mask_seeds:
-            rng = np.random.RandomState(seed)
-            n_mask = int(len(headwords) * frac)
-            masked_words = set(rng.choice(headwords, n_mask, replace=False))
+    results = []
 
-            # Create a masked lexicon copy
-            # For retrieval, masking affects feature extraction, not the retriever itself
-            # So we just log the metric at this masking level
-            # In practice, this would modify the lexicon features in the pipeline
-            metrics = retriever.evaluate(test_lines, test_song_ids, top_k_values)
+    # Baseline: 0.0 mask fraction
+    base_cov = lexicon.coverage(all_tokens)
+    skf = StratifiedKFold(n_splits=actual_folds, shuffle=True, random_state=42)
+
+    for frac in [0.0] + [f for f in mask_fractions if f > 0.0]:
+        seeds_to_run = [0] if frac == 0.0 else mask_seeds
+        for seed in seeds_to_run:
+            if frac == 0.0:
+                masked_lex = lexicon
+            else:
+                rng = np.random.RandomState(seed)
+                n_mask = int(len(headwords) * frac)
+                masked_words = set(rng.choice(headwords, n_mask, replace=False))
+                masked_lex = Lexicon(name=f'{lexicon.name}_masked_{frac}', source=lexicon.source)
+                for hw, entries in lexicon.entries.items():
+                    if hw not in masked_words:
+                        for entry in entries:
+                            masked_lex.add_entry(entry)
+
+            cov = masked_lex.coverage(all_tokens)
+            fold_f1s = []
+            fold_accs = []
+
+            for train_idx, test_idx in skf.split(X, y_arr):
+                pipe = Pipeline([
+                    ('features', build_feature_pipeline(
+                        lexicon_condition=masked_lex,
+                        loanword_seeds=loanword_seeds,
+                        use_tfidf_word=True,
+                        use_tfidf_char=True,
+                        use_lexicon=True,
+                        use_loanword=True,
+                        use_text_stats=True,
+                    )),
+                    ('scaler', MaxAbsScaler()),
+                    ('clf', LogisticRegression(max_iter=1000, random_state=42, C=1.0))
+                ])
+                pipe.fit(X[train_idx], y_arr[train_idx])
+                pred = pipe.predict(X[test_idx])
+                fold_f1s.append(f1_score(y_arr[test_idx], pred, average='macro', zero_division=0))
+                fold_accs.append(accuracy_score(y_arr[test_idx], pred))
+
+            f1_mean = np.mean(fold_f1s) if fold_f1s else 0.0
+            acc_mean = np.mean(fold_accs) if fold_accs else 0.0
+
             results.append({
                 'mask_fraction': frac,
                 'seed': seed,
-                **metrics
+                'coverage_pct': cov['direct_coverage_pct'],
+                'total_coverage_pct': cov['total_coverage_pct'],
+                'remaining_headwords': masked_lex.size(),
+                'f1_macro': f1_mean,
+                'accuracy': acc_mean,
             })
 
     return pd.DataFrame(results)

@@ -62,12 +62,17 @@ class Lexicon:
         self.source = source
         self.entries: Dict[str, List[LexiconEntry]] = defaultdict(list)
         self._headwords: Set[str] = set()
+        self._normalised_index: Dict[str, List[LexiconEntry]] = defaultdict(list)
+        self.metadata: Dict[str, Any] = {}
 
     def add_entry(self, entry: LexiconEntry):
         """Add an entry to the lexicon."""
         hw = entry.headword.lower().strip()
         self.entries[hw].append(entry)
         self._headwords.add(hw)
+        if entry.normalised_form:
+            norm = entry.normalised_form.lower().strip()
+            self._normalised_index[norm].append(entry)
 
     @property
     def headwords(self) -> Set[str]:
@@ -103,22 +108,31 @@ class Lexicon:
 
         Generates modern and old spelling candidates and checks each.
         """
+        w = word.lower().strip()
         # Direct lookup first
-        result = self.lookup(word)
+        result = self.lookup(w)
         if result:
             return result
 
+        # Check normalised form index directly
+        if w in self._normalised_index:
+            return self._normalised_index[w]
+
         # Try modern candidates (corpus word → modern lexicon)
-        for candidate in generate_modern_candidates(word.lower()):
+        for candidate in generate_modern_candidates(w):
             result = self.lookup(candidate)
             if result:
                 return result
+            if candidate in self._normalised_index:
+                return self._normalised_index[candidate]
 
         # Try old candidates (modern word → old lexicon)
-        for candidate in generate_old_candidates(word.lower()):
+        for candidate in generate_old_candidates(w):
             result = self.lookup(candidate)
             if result:
                 return result
+            if candidate in self._normalised_index:
+                return self._normalised_index[candidate]
 
         return None
 
@@ -330,6 +344,15 @@ def load_house_lexicon(house_dir: str, unique_words: List[str]) -> Lexicon:
         logger.info(f"Duplicates found across files: {len(duplicates)}")
         for word, first, second in duplicates[:5]:
             logger.info(f"  '{word}': {first} vs {second}")
+
+    lexicon.metadata['file_names'] = [os.path.basename(f) for f in csv_files]
+    lexicon.metadata['num_files'] = len(csv_files)
+    lexicon.metadata['covered_count'] = len(covered)
+    lexicon.metadata['total_unique_words'] = len(unique_set)
+    lexicon.metadata['coverage_pct'] = len(covered) / max(len(unique_set), 1) * 100
+    lexicon.metadata['uncovered_words'] = sorted(list(uncovered))
+    lexicon.metadata['missing_ranges'] = missing_ranges
+    lexicon.metadata['duplicates'] = duplicates
 
     return lexicon
 
